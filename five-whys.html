@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five Whys - Teknik Sederhana untuk Masalah Kompleks</title>
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1 { font-size: 2.2em; color: var(--primary); margin: 1.5em 0 0.5em; border-bottom: 3px solid var(--primary); padding-bottom: 0.3em; }
+h2 { font-size: 1.6em; color: var(--primary-dark); margin: 1.5em 0 0.5em; border-bottom: 1px solid var(--border); padding-bottom: 0.2em; }
+h3 { font-size: 1.3em; color: #334155; margin: 1.2em 0 0.4em; }
+h4 { font-size: 1.1em; color: #475569; margin: 1em 0 0.3em; }
+p { margin: 0.8em 0; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 0.8em 1.2em;
+  margin: 1.2em 0;
+  background: #fffbeb;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+code {
+  background: #f1f5f9;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'Fira Code', monospace;
+}
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1.2em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+pre code { background: none; color: inherit; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+th, td {
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+th { background: var(--primary); color: white; }
+tr:nth-child(even) { background: #f8fafc; }
+ul, ol { margin: 0.8em 0; padding-left: 2em; }
+li { margin: 0.4em 0; }
+hr { border: none; border-top: 2px solid var(--border); margin: 2em 0; }
+strong { color: #1e293b; }
+@media (max-width: 600px) {
+  body { padding: 12px; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.3em; }
+}
+</style>
+</head>
+<body>
+<nav style="margin-bottom: 2em; padding: 1em; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"><a href="index.html">← Kembali ke Index</a></nav>
+<article>
+<h1>🔬 EBOOK: 5 WHYS ON STEROIDS</h1>
+
+<h2>Temukan AKAR Masalah Bisnis, Bukan Cuma Gejalanya</h2>
+
+<hr/>
+
+<p><strong>Dibuat oleh: Imam — Creator of 10 Business Hacking Methods</strong></p>
+<p><strong>Hak Cipta © 2026</strong></p>
+
+<hr/>
+
+<h3>Tentang Penulis</h3>
+
+<p>Saya Imam. COO, CMO, Director — dan yang paling penting: <strong>orang yang pernah gagal.</strong></p>
+
+<p>Gagal handle project 20 juta. Gagal bikin bisnis yang nguntungin. Gagal nge-hire orang yang salah.</p>
+
+<p>Tapi dari semua kegagalan itu, saya belajar satu skill yang paling valuable:</p>
+
+<p><strong>Cara menemukan akar masalah.</strong></p>
+
+<p>Bukan gejalanya. Bukan symptom-nya. Tapi <strong>akarnya.</strong></p>
+
+<p>Karena kalau kamu salah diagnosis, kamu salah obat. Kalau kamu salah obat, kamu bukan ngobati — kamu <strong>memperburuk.</strong></p>
+
+<p>Dari pengalaman F&B, fashion, skincare, dan consulting, saya ngembangin teknik ini sampai versi yang lebih powerful dari 5 Whys asli. Saya sebut: <strong>5 Whys on Steroids.</strong></p>
+
+<hr/>
+
+<h3>Daftar Isi</h3>
+
+<ol>
+<li>[Pengantar: Kenapa Kamu Baca Ini](#bab-1)</li>
+<li>[Apa Itu 5 Whys on Steroids?](#bab-2)</li>
+<li>[MINDSET: Stop Siram Daun, Siram Akar](#bab-3)</li>
+<li>[FRAMEWORK: Teknik 5 Whys yang Benar](#bab-4)</li>
+<li>[WHY WEB: Karena Satu Masalah Punya Banyak Akar](#bab-5)</li>
+<li>[CASE STUDY: F&B Penjualan Turun 60%](#bab-6)</li>
+<li>[COMMON MISTAKES](#bab-7)</li>
+<li>[ADVANCED TIPS](#bab-8)</li>
+<li>[ACTION PLAN](#bab-9)</li>
+<li>[Penutup](#penutup)</li>
+</ol>
+
+<hr/>
+
+<p><a name="bab-1"></a></p>
+<h2>BAB 1: Pengantar</h2>
+
+<h3>Kenapa Kamu Baca Ebook Ini?</h3>
+
+<p>Saya mau kasih kamu contoh nyata dari pengalaman saya handling bisnis Klien.</p>
+
+<p>Sebuah bisnis F&B. Penjualan turun. Owner panik. Dia bilang: <em>"Mas, kita butuh iklan baru. Kita butuh rebranding. Kita butuh ekspansi."</em></p>
+
+<p>Jawab saya: <em>"Tenang. Kita cek dulu."</em></p>
+
+<p>Setelah 30 menit ngobrol dan analisis, kita temukan masalahnya:</p>
+
+<p>Bukan iklan. Bukan rebranding. Bukan lokasi.</p>
+
+<p><strong>Masalahnya: Chef head resign 3 bulan lalu, dan chef baru nggak menguasai resep yang sama. Pelanggan nggak balik karena rasa berubah.</strong></p>
+
+<p>Semua gejala kelihatan di penjualan turun. Tapi <strong>akarnya</strong> ada di dapur.</p>
+
+<p>Owner hampir habis 50 juta untuk branding dan iklan. Padahal yang dia butuhin cuma retrain chef atau hire chef baru.</p>
+
+<p><strong>Ini yang terjadi kalau kamu mengobati gejala, bukan penyakit.</strong></p>
+
+<h3>Siapa yang Butuh Ebook Ini?</h3>
+
+<p>✅ Owner bisnis yang udah jalan tapi stuck</p>
+<p>✅ Manager yang terus handle masalah yang <strong>sama</strong> berulang-ulang</p>
+<p>✅ Entrepreneur yang sering "firefighting" — terus kebakaran, terus padam</p>
+<p>✅ Mau punya framework diagnostik yang simpel dan bisa dipakai siapa pun</p>
+
+<hr/>
+
+<p><a name="bab-2"></a></p>
+<h2>BAB 2: Apa Itu 5 Whys on Steroids?</h2>
+
+<h3>Asal Mula 5 Whys</h3>
+
+<p>Teknik 5 Whys ini berasal dari <strong>Toyota Production System.</strong> Taiichi Ohno, bapak lean manufacturing, nyiptain teknik ini untuk menemukan akar masalah di lini produksi.</p>
+
+<p>Konsepnya simpel: untuk setiap masalah, tanya "Mengapa?" sampai 5 kali. Sampai level 5 itu, biasanya kamu menemukan <strong>akar masalah</strong> — bukan cuma gejala.</p>
+
+<h3>Masalah dengan 5 Whys Asli</h3>
+
+<p>5 Whys asli bagus. Tapi saya menemukan beberapa kekurangan:</p>
+
+<ol>
+<li><strong>Terlalu linear</strong> — asumsinya satu masalah cuma punya SATU padahal seringkali ada BANYAK akar</li>
+<li><strong>Nggak cukup dalam</strong> — level 5 kadang masih gejala</li>
+<li><strong>Tanpa pattern recognition</strong> — nggak bedain mana "akar sejati" dan mana "cabang gejala"</li>
+<li><strong>Nggak punya action framework</strong> — udah keliat akar, terus apa?</li>
+</ol>
+
+<h3>Upgrade: 5 Whys on Steroids</h3>
+
+<p>Saya empat kali lipatinya:</p>
+
+<p><strong>Upgrade #1: 7 Whys</strong> — tambah 2 level kedalaman (level 6 = masalah struktural, level 7 = akar budaya/sistemik)</p>
+
+<p><strong>Upgrade #2: Why Web</strong> — nggak cuma lurus ke bawah. Setiap jawaban dipecah jadi 2-3 sub-pertanyaan. Hasilnya: <strong>web of root causes</strong>, bukan cuma 1 garis.</p>
+
+<p><strong>Upgrade #3: Root Cause Scoring</strong> — setiap akar dapat score: Impact (1-5) x Reversibility (1-5). Root cause paling tinggi score-nya = priority tindakan.</p>
+
+<p><strong>Upgrade #4: Prescription Protocol</strong> — setiap root cause langsung action-nya. Nggak sampe "ok, ini akar masalahnya" lalu nggak ngapa-ngapain.</p>
+
+<hr/>
+
+<p><a name="bab-3"></a></p>
+<h2>BAB 3: MINDSET — Stop Siram Daun, Siram Akar</h2>
+
+<h3>Simptom vs Akar: Analogi yang Berbeda</h3>
+
+<p>Kebanyakan bisnis owner merespons masalah seperti ini:</p>
+
+<p><strong>Kalau daun tanaman kuning:</strong> → siram lebih banyak air</p>
+<p><strong>Kalau daun tanaman kuning:</strong> → kasih lebih banyak pupuk</p>
+<p><strong>Kalau daun tanaman kuning:</strong> → pindah ke tempat lebih terang</p>
+
+<p>Padahal kalau kita cek akarnya: <strong>akar busuk karena air terlalu banyak.</strong> Jadi tambah air = memperburuk.</p>
+
+<p><strong>Dalam bisnis:</strong></p>
+<ul>
+<li>Customer complain → tambah CS (padahal masalahnya di kualitas produk)</li>
+<li>Penjualan turun → iklan baru (padahal masalahnya di retensi)</li>
+<li>Tim nggak productive → hire orang baru (padahal masalennya SOP)</li>
+<li>Profit tipis → naikkan harga (padahal masalennya cost control)</li>
+</ul>
+
+<h3>Kebiasaan yang Harus Diubah</h3>
+
+<table><thead><tr>
+<th>Kebiasaan Lama</th>
+<th>Kebiasaan Baru</th>
+</tr></thead><tbody>
+<tr>
+<td>"Ada masalah, cari solusi cepat"</td>
+<td>"Ada masalah, cari AKAR dulu"</td>
+</tr>
+<tr>
+<td>"Pikirin sendiri"</td>
+<td>"Libatkan tim untuk perspektif berbeda"</td>
+</tr>
+<tr>
+<td>"Ambil keputusan based on gut feeling"</td>
+<td>"Ambil keputusan based on root cause analysis"</td>
+</tr>
+<tr>
+<td>"Kalau udah diobati, lanjut"</td>
+<td>"Kalau udah diobati, cek apakah benar-benar ilang"</td>
+</tr>
+<tr>
+<td>"Masalah datang = stress"</td>
+<td>"Masalah datang = data untuk perbaikan"</td>
+</tr>
+
+<h3>Level Keterbalikan</h3>
+
+</tbody></table>
+<p>Tidak semua masalah butuh level 7. Tapi setiap masalah <strong>harus</strong> sampe level minimal 3.</p>
+
+<table><thead><tr>
+<th>Level</th>
+<th>Tipe</th>
+<th>Contoh</th>
+</tr></thead><tbody>
+<tr>
+<td>1-2</td>
+<td>GEJALA</td>
+<td>"Penjualan turun" / "Customer complain"</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>MASALAH</td>
+<td>"Konten nggak relevan" / "Proses delivery lama"</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>AKAR</td>
+<td>"Nggak ada SOP content research" / "Supplier management nggak ada backup"</td>
+</tr>
+<tr>
+<td>7</td>
+<td>AKAR SISTEMIK</td>
+<td>"Budaya 'yang penting selesai' tanpa quality check"</td>
+</tr>
+
+<hr/>
+
+</tbody></table>
+<p><a name="bab-4"></a></p>
+<h2>BAB 4: FRAMEWORK — Teknik 5 Whys yang Benar</h2>
+
+<h3>Step-by-Step 5 Whys on Steroids</h3>
+
+<p><strong>STEP 1: Definisikan Masalah dengan Spesifik</strong></p>
+
+<p>Jangan: <em>"Bisnis saya bermasalah"</em></p>
+<p>Tapi: <em>"Penjualan bulan Juni turun 40% dibanding Mei"</em></p>
+
+<p>Usahakan <strong>kuantitatif</strong>. Ada angka. Ada periode. Ada konteks.</p>
+
+<p><strong>STEP 2: Tanya "Mengapa Pertama" (Level 1)</strong></p>
+
+<p>Tulis down jawaban pertama insting kamu.</p>
+
+<p>Contoh: "Penjualan turun 40%" → "Karena traffic ke landing page berkurang"</p>
+
+<p><strong>STEP 3: Tanya "Mengapa" lagi (Level 2-4)</strong></p>
+
+<p>Terus gali setiap jawaban.</p>
+
+<p>Level 2: "Traffic berkurang karena engagement Instagram turun"</p>
+<p>Level 3: "Engagement turun karena konten nggak relevan"</p>
+<p>Level 4: "Konten nggak relevan karena tim nggak tau audience skrg suka apa"</p>
+
+<p><strong>STEP 4: Buat Why Web (Level 5-7)</strong></p>
+
+<p>Dari Level 4, <strong>pecah</strong> jadi beberapa sub-pertanyaan:</p>
+
+<p><strong>Cabang A: "Tim nggak tau audience skrg suka apa"</strong></p>
+<p>→ Mengapa A1? → "Nggak ada sistem riset konten"</p>
+<p>→ Mengapa A2? → "Nggak ada SOP untuk content research"</p>
+<p>→ Mengapa A3? → "Kita nggak pernah bikin SOP untuk hal itu"</p>
+
+<p><strong>Cabang B: "Tim nggak tau audience skrg suka apa"</strong></p>
+<p>→ Mengapa B1? → "Nggak ada analytics review rutin"</p>
+<p>→ Mengapa B2? → "Meeting mingguan nggak pernah bahas data"</p>
+<p>→ Mengapa B3? → "Kita nggak punya culture berbasis data"</p>
+
+<p><strong>STEP 5: Score Setiap Akar</strong></p>
+
+<table><thead><tr>
+<th>Akar</th>
+<th>Impact (1-5)</th>
+<th>Reversibility (1-5)</th>
+<th>Score</th>
+</tr></thead><tbody>
+<tr>
+<td>Nggak ada SOP content research</td>
+<td>4</td>
+<td>5</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Nggak ada culture berbasis data</td>
+<td>5</td>
+<td>3</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Nggak ada analytics review rutin</td>
+<td>3</td>
+<td>5</td>
+<td>15</td>
+</tr>
+
+</tbody></table>
+<p><strong>STEP 6: Prescription (Solusi per Akar)</strong></p>
+
+<p>Untuk score tertinggi (20): <strong>"Nggak ada SOP content research"</strong></p>
+<p>→ Action: Buat SOP riset konten mingguan</p>
+<p>→ Owner: Tim Marketing</p>
+<p>→ Deadline: 1 minggu</p>
+<p>→ Success metric: 10 ide konten per minggu dari riset</p>
+
+<hr/>
+
+<p><a name="bab-5"></a></p>
+<h2>BAB 5: WHY WEB — Karena Satu Masalah Punya Banyak Akar</h2>
+
+<h3>Konsep Why Web</h3>
+
+<p>5 Whys asli cuma 1 garis lurus. Tapi masalah bisnis itu <strong>kompleks.</strong> Satu masalah bisa punya 3-5 akar yang saling terhubung.</p>
+
+<p><strong>Why Web</strong> adalah teknik untuk memetakan SEMUA akar dalam satu visual.</p>
+
+<h3>Cara Buat Why Web</h3>
+
+<pre><code>
+                        [MASALAH]
+                       Penjualan Turun 40%
+                      /                \
+            [GEJALA 1]              [GEJALA 2]
+         Traffic Berkurang       Conversion Turun
+           /        \                /         \
+      [MASALAH1] [MASALAH2]    [MASALAH3] [MASALAH4]
+      Konten     Algorithm   Landing    Trust
+      Mati       Change      Page       Issue
+        |           |           |          |
+     [AKAR1]    [AKAR2]     [AKAR3]    [AKAR4]
+     Nggak ada  Nggak ada   Nggak ada  Nggak ada
+     SOP riset  A/B test    testimoni  social
+     konten     konten      di LP      proof
+</code></pre>
+
+<p>Dari 1 masalah, kita temukan <strong>4 akar berbeda</strong> yang masing-masing butuh solusi berbeda.</p>
+
+<h3>Template Why Web</h3>
+
+<pre><code>
+MASALAH: ___________
+│
+├── GEJALA A: ___
+│   ├── Masalah A1: ___
+│   │   └── AKAR: ___ (Impact: __, Reversibility: __, Score: __)
+│   └── Masalah A2: ___
+│       └── AKAR: ___ (Impact: __, Reversibility: __, Score: __)
+│
+├── GEJALA B: ___
+│   ├── Masalah B1: ___
+│   │   └── AKAR: ___ (Impact: __, Reversibility: __, Score: __)
+│   └── Masalah B2: ___
+│       └── AKAR: ___ (Impact: __, Reversibility: __, Score: __)
+│
+└── GEJALA C: ___
+    └── ...
+</code></pre>
+
+<hr/>
+
+<p><a name="bab-6"></a></p>
+<h2>BAB 6: CASE STUDY — F&B Penjualan Turun 60%</h2>
+
+<h3>Situasi</h3>
+
+<p>Bisnis F&B "Warung Sedap" (nama disamarkan). Penjualan turun 60% dalam 2 bulan. Owner panik. Mau iklan 10 juta. Mau ganti menu. Mau rebranding.</p>
+
+<p>Saya bilang: <em>"Tunggu. Kita 5 Whys dulu."</em></p>
+
+<h3>Proses 5 Whys on Steroids</h3>
+
+<p><strong>MASALAH:</strong> Penjualan turun 60% dalam 2 bulan</p>
+
+<p><strong>LEVEL 1:</strong> Mengapa penjualan turun?</p>
+<p>→ "Karena customer yang datang lebih sedikit dari biasanya"</p>
+
+<p><strong>LEVEL 2:</strong> Mengapa customer lebih sedikit?</p>
+<p>→ "Karena repeat customer (yang biasa datang) berkurang drastis"</p>
+
+<p><strong>LEVEL 3:</strong> Mengapa repeat customer berkurang?</p>
+<p>→ "Karena mereka bilang 'rasanya beda' dan 'pelayanan lambat'"</p>
+
+<p><strong>LEVEL 4 (WHY WEB):</strong></p>
+
+<p><strong>Cabang A: "Rasa beda"</strong></p>
+<p>→ Mengapa A1? → "Chef head resign 3 bulan lalu"</p>
+<p>→ Mengapa A2? → "Chef baru nggak dilatih dengan resep yang standar"</p>
+<p>→ Mengapa A3? → "Nggak ada SOP resep (resep cuma di kepala chef lama)"</p>
+<p>→ <strong>AKAR A: Nggak ada SOP resep / recipe documentation</strong></p>
+
+<p><strong>Cabang B: "Pelayanan lambat"</strong></p>
+<p>→ Mengapa B1? → "Waiter baru banyak yang baru"</p>
+<p>→ Mengapa B2? → "Training cuma 1 hari"</p>
+<p>→ Mengapa B3? → "Nggak ada SOP training untuk waiter baru"</p>
+<p>→ <strong>AKAR B: Nggak ada SOP training waiter</strong></p>
+
+<p><strong>Cabang C: "Repeat customer berkurang" (alternatif)</strong></p>
+<p>→ Mengapa C1? → "Kompetitor baru buka di sebelah"</p>
+<p>→ Mengapa C2? → "Kompetitor ini lebih murah dan lebih cepat"</p>
+<p>→ Mengapa C3? → "Kita nggak pernah cek kompetitor dan nggak punya value proposition yang jelas"</p>
+<p>→ <strong>AKAR C: Nggak ada competitive analysis dan value proposition unclear</strong></p>
+
+<h3>Root Cause Scoring</h3>
+
+<table><thead><tr>
+<th>Akar</th>
+<th>Impact</th>
+<th>Reversibility</th>
+<th>Score</th>
+<th>Priority</th>
+</tr></thead><tbody>
+<tr>
+<td>A: Nggak ada SOP resep</td>
+<td>5</td>
+<td>4</td>
+<td>20</td>
+<td>🥇 #1</td>
+</tr>
+<tr>
+<td>B: Nggak ada SOP training waiter</td>
+<td>4</td>
+<td>5</td>
+<td>20</td>
+<td>🥇 #1</td>
+</tr>
+<tr>
+<td>C: Nggak ada competitive analysis</td>
+<td>4</td>
+<td>3</td>
+<td>12</td>
+<td>🥉 #3</td>
+</tr>
+
+<h3>Prescription</h3>
+
+</tbody></table>
+<p><strong>Untuk Akar A (SOP Resep):</strong></p>
+<ol>
+<li>Dokumentasi semua resep → foto + video proses</li>
+<li>Buat recipe book standar</li>
+<li>Training chef baru dengan recipe book</li>
+<li>Quality check setiap hari oleh owner/manager</li>
+<li><strong>Deadline: 2 minggu</strong></li>
+</ol>
+
+<p><strong>Untuk Akar B (SOP Training Waiter):</strong></p>
+<ol>
+<li>Buat checklist training 3 hari</li>
+<li>Role play situasi umum (komplain, rush hour, reservasi)</li>
+<li>Shadowing dengan waiter senior selama 2 hari</li>
+<li>Evaluasi setelah 1 minggu</li>
+<li><strong>Deadline: 1 minggu</strong></li>
+</ol>
+
+<p><strong>Untuk Akar C (Competitive Analysis):</strong></p>
+<ol>
+<li>Mystery shopping ke kompetitor baru</li>
+<li>Bandingkan: harga, porsi, kecepatan, suasana</li>
+<li>Tentukan USP (Unique Selling Point) yang jelas</li>
+<li>Komunikasikan USP ke customer</li>
+<li><strong>Deadline: 3 minggu</strong></li>
+</ol>
+
+<h3>Hasil</h3>
+
+<p>Setelah 1 bulan implementasi:</p>
+<ul>
+<li>Penjualan naik 45% (dari titik terendah)</li>
+<li>Repeat customer kembali 70%</li>
+<li>Rating Google naik dari 3.8 ke 4.3</li>
+<li><strong>Biaya implementasi: Rp 0</strong> (cuma waktu dan komitmen)</li>
+</ul>
+
+<p><strong>Bandingkan dengan rencana awal owner: iklan 10 juta + rebranding 20 juta = Rp 30 juta.</strong></p>
+
+<p><strong>5 Whys on Steroids menyelamatkan 30 juta dan menemukan akar masalah yang sesungguhnya.</strong></p>
+
+<hr/>
+
+<p><a name="bab-7"></a></p>
+<h2>BAB 7: COMMON MISTAKES</h2>
+
+<h3>Mistake #1: Berhenti di Level 2-3</h3>
+
+<p>Banyak orang bertanya "kenapa" 2-3 kali, lalu berhenti dan bilang "oh, ini masalahnya."</p>
+
+<p>Level 2-3 masih gejula. Terus sampai level 5-7.</p>
+
+<h3>Mistake #2: Jawaban Terlalu Umum</h3>
+
+<p>❌ "Karena customer nggak suka"</p>
+<p>✅ "Karena 60% customer survey bilang tekstur produk berubah setelah reformulasi"</p>
+
+<p>Spesifik = actionable.</p>
+
+<h3>Mistake #3: Nggak Libatkan Tim</h3>
+
+<p>Kalau kamu nanya "kenapa" sendiri, kamu cuma dapet 1 perspektif. Libatkan tim untuk jawaban yang lebih kaya.</p>
+
+<h3>Mistake #4: Ketemu Akar, Lalu Nggak Ngapa-ngapain</h3>
+
+<p>5 Whys tanpa action = buang-buang waktu. Setiap akar HARUS punya prescription.</p>
+
+<h3>Mistake #5: Salah Akar = Salah Obat</h3>
+
+<p>Pastikan kamu validate akar. Tanya: "Kalau kita perbaiki ini, masalahnya akan selesai?" Kalau nggak, berarti kamu belum temukan akar yang benar.</p>
+
+<hr/>
+
+<p><a name="bab-8"></a></p>
+<h2>BAB 8: ADVANCED TIPS</h2>
+
+<h3>Advanced #1: 5 Whys untuk Decision-Making</h3>
+
+<p>Bukan cuma untuk masalah. Pakai 5 Whys untuk <strong>keputusan:</strong></p>
+
+<p><em>"Kita mau buka cabang baru"</em></p>
+<p>→ Mengapa? → "Karena demand tinggi"</p>
+<p>→ Mengapa demand tinggi? → "Karena kapasitas penuh setiap hari"</p>
+<p>→ Mengapa kapasitas penuh? → "Karena kita cuma punya 1 lokasi"</p>
+<p>→ Mengapa cuma 1 lokasi? → "Karena kita nggak pernah plan untuk ekspansi"</p>
+<p>→ Mengapa nggak plan? → "Karena kita terlalu fokus operasional harian"</p>
+<p>→ <strong>Akar: Nggak ada tim yang handle strategi dan ekspansi</strong></p>
+
+<p>Jadi solusinya bukan "buka cabang baru" — tapi "hire/train orang yang handle strategi ekspansi dulu."</p>
+
+<h3>Advanced #2: 5 Whys untuk Tim — Cara Facilitasi</h3>
+
+<ol>
+<li>Tulis masalah di whiteboard</li>
+<li>Tanya ke semua orang: "Menurut kamu, kenapa?"</li>
+<li>Kumpulkan semua jawaban (nggak boleh judge)</li>
+<li>Voting: jawaban mana yang paling mungkin?</li>
+<li>Dari jawaban terpilih, tanya "kenapa" lagi</li>
+<li>Ulangi sampai level 5-7</li>
+<li>Di akhir, setiap orang action item</li>
+</ol>
+
+<h3>Advanced #3: Pattern Recognition</h3>
+
+<p>Setelah melakukan 5 Whys untuk 10+ masalah, kamu akan mulai melihat <strong>pola:</strong></p>
+
+<ul>
+<li>70% masalah di tim sales → akar: SOP</li>
+<li>60% masalah di operasional → akar: training</li>
+<li>80% masalah di marketing → akar: audience research</li>
+</ul>
+
+<p><strong>Pola ini yang bikin kamu tahu di mana harus investasi perbaikan.</strong></p>
+
+<hr/>
+
+<p><a name="bab-9"></a></p>
+<h2>BAB 9: ACTION PLAN</h2>
+
+<h3>5 Whys on Steroids Worksheet</h3>
+
+<p><strong>MASALAH:</strong> ___</p>
+
+<p><strong>LEVEL 1:</strong> Mengapa? ___</p>
+
+<p><strong>LEVEL 2:</strong> Mengapa? ___</p>
+
+<p><strong>LEVEL 3:</strong> Mengapa? ___</p>
+
+<p><strong>WHY WEB (Level 4-7):</strong></p>
+<ul>
+<li>Cabang A: ___ → Mengapa? ___ → Mengapa? ___ → AKAR: ___</li>
+<li>Cabang B: ___ → Mengapa? ___ → Mengapa? ___ → AKAR: ___</li>
+<li>Cabach C: ___ → Mengapa? ___ → Mengapa? ___ → AKAR: ___</li>
+</ul>
+
+<p><strong>ROOT CAUSE SCORING:</strong></p>
+<table><thead><tr>
+<th>Akar</th>
+<th>Impact</th>
+<th>Reversibility</th>
+<th>Score</th>
+<th>Priority</th>
+</tr></thead><tbody>
+
+</tbody></table>
+<p><strong>PRESCRIPTION:</strong></p>
+<table><thead><tr>
+<th>Akar</th>
+<th>Action</th>
+<th>Owner</th>
+<th>Deadline</th>
+<th>Success Metric</th>
+</tr></thead><tbody>
+
+<hr/>
+
+</tbody></table>
+<p><a name="penutup"></a></p>
+<h2>Penutup</h2>
+
+<h3>Akar vs Gejala</h3>
+
+<p>Saya mau kasih kamu 1 kalimat yang akan mengubah cara kamu memandang masalah bisnis selamanya:</p>
+
+<p><strong>"Kalau kamu terus mengobati gejala, masalah akan selalu kembali. Kalau kamu mengobati akar, masalah akan selesai untuk selamanya."</strong></p>
+
+<p>5 Whys on Steroids bukan cuma teknik. Ini <strong>mindset.</strong> Cara berpikir yang memaksa kamu untuk selalu mencari kedalaman, bukan berhenti di permukaan.</p>
+
+<p>Setiap kali kamu ketemu masalah — di bisnis, di tim, di hidup — tanya diri kamu:</p>
+
+<p><strong>"Akar masalahnya di mana?"</strong></p>
+
+<p>Dan terus menggali. Sampai kamu temukan.</p>
+
+<h3>Metode Berikutnya</h3>
+
+<p>Setelah kamu bisa diagnosis masalah dengan 5 Whys, metode berikutnya yang wajib kamu pelajari adalah <strong>🎯 Business X-Ray</strong> — 5 pertanyaan brutal untuk cek kondisi bisnis kamu secara keseluruhan.</p>
+
+<p>Dua metode ini (5 Whys + X-Ray) adalah kombinasi yang powerful: <strong>5 Whys untuk masalah spesifik, X-Ray untuk diagnosis menyeluruh.</strong></p>
+
+<p>Salam,</p>
+<p><strong>Imam</strong></p>
+<p><em>Creator of 10 Business Hacking Methods</em></p>
+
+<hr/>
+
+<h3>Resources</h3>
+
+<p><strong>Tools yang Direkomendasikan:</strong></p>
+<ul>
+<li>Whiteboard / kertas besar — untuk Why Web</li>
+<li>Google Forms — untuk survey</li>
+<li>Google Sheets — untuk tracking</li>
+<li>Miro / FigJam — untuk Why Web digital</li>
+</ul>
+
+<hr/>
+
+<p><em>Hak Cipta © 2026 Imam Business Hacking Methods.</em></p>
+
+</article>
+<footer style="margin-top: 3em; padding: 1.5em; text-align: center; color: var(--text-light); border-top: 1px solid var(--border);"><p>© 2026 Imam Business Hacking Methods</p></footer>
+</body>
+</html>

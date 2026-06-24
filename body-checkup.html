@@ -1,0 +1,2302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body Checkup - Diagnosa Kesehatan Bisnis</title>
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1 { font-size: 2.2em; color: var(--primary); margin: 1.5em 0 0.5em; border-bottom: 3px solid var(--primary); padding-bottom: 0.3em; }
+h2 { font-size: 1.6em; color: var(--primary-dark); margin: 1.5em 0 0.5em; border-bottom: 1px solid var(--border); padding-bottom: 0.2em; }
+h3 { font-size: 1.3em; color: #334155; margin: 1.2em 0 0.4em; }
+h4 { font-size: 1.1em; color: #475569; margin: 1em 0 0.3em; }
+p { margin: 0.8em 0; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 0.8em 1.2em;
+  margin: 1.2em 0;
+  background: #fffbeb;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+code {
+  background: #f1f5f9;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'Fira Code', monospace;
+}
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1.2em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+pre code { background: none; color: inherit; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+th, td {
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+th { background: var(--primary); color: white; }
+tr:nth-child(even) { background: #f8fafc; }
+ul, ol { margin: 0.8em 0; padding-left: 2em; }
+li { margin: 0.4em 0; }
+hr { border: none; border-top: 2px solid var(--border); margin: 2em 0; }
+strong { color: #1e293b; }
+@media (max-width: 600px) {
+  body { padding: 12px; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.3em; }
+}
+</style>
+</head>
+<body>
+<nav style="margin-bottom: 2em; padding: 1em; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"><a href="index.html">← Kembali ke Index</a></nav>
+<article>
+<h1>🩺 BODY CHECKUP SCAN</h1>
+<h3>Metode Diagnosis Bisnis Cepat — Sebelum Penyakit Bisnis Mematikan</h3>
+
+<hr/>
+
+<blockquote>
+<p><em>"Bisnis yang tidak pernah di-diagnosis adalah bisnis yang sedang mati perlahan. Anda tidak merasakannya sampai terlambat."</em></p>
+<p>— <strong>Imam</strong></p>
+</blockquote>
+
+<hr/>
+
+<p><strong>METODE 4 DARI SERI IMAM'S BUSINESS METHOD</strong></p>
+
+<p>📖 Ebook ini bagian dari seri lengkap "The Imam Method" — sebuah koleksi metode bisnis praktis untuk entrepreneur Muslim yang ingin tumbuh tanpa trial and error yang mahal.</p>
+
+<p><strong>Versi:</strong> 1.0</p>
+<p><strong>Penulis:</strong> Imam</p>
+<p><strong>Tahun:</strong> 2026</p>
+
+<hr/>
+
+<h2>✍️ TENTANG PENULIS</h2>
+
+<p><strong>Imam</strong> adalah entrepreneur serial dan business consultant dengan pengalaman lebih dari satu dekade di industri F&B, Muslim fashion, skincare, dan business consulting. Perjalanan bisnisnya tidak selalu mulus — dan justru dari kegagalan-kegagalan itulah metode-metode dalam seri ini lahir.</p>
+
+<h3>Perjalanan Bisnis Imam:</h3>
+
+<p>🍜 <strong>F&B (Food & Beverage)</strong></p>
+<p>Imam memulai kariernya di industri kuliner, memahami dari nol bagaimana membangun bisnis makanan dan minuman — mulai dari menu development, supply chain, hingga customer experience. Pengalamannya mengajarkan bahwa bisnis F&B yang sukses bukan soal resep terenak, melainkan sistem operasional yang bisa direplikasi.</p>
+
+<p>👗 <strong>Muslim Fashion</strong></p>
+<p>Di industri mode Muslim, Imam belajar bahwa fashion bukan sekadar soal desain. Ada psikologi konsumen, tren yang berubah musim ke musim, dan — yang paling penting — cara membangun brand yang punya "nyawa." Di sinilah metode Reverse Engineer Observation pertama kali ia kembangkan, dengan mengamati brand-brand fashion global dan menerapkan prinsip-prinsipnya ke pasar lokal.</p>
+
+<p>🧴 <strong>Skincare</strong></p>
+<p>Industri skincare mengajarkan Imam tentang personalisasi dan customer journey. Setiap produk punya "cerita" yang harus bisa dibaca konsumen dalam hitungan detik. Kemampuan membaca sinyal pasar — inti dari metode ini — diasah keras di industri ini.</p>
+
+<p>💼 <strong>Business Consulting</strong></p>
+<p>Kini, Imam membantu entrepreneur-entrepreneur Muslim lainnya untuk mempercepat pertumbuhan bisnis mereka. Dari konsultasi-konsultasi itulah metode-metode ini dirumuskan, diuji, dan terus diperbaiki.</p>
+
+<h3>Filosofi Imam:</h3>
+
+<blockquote>
+<p><em>"Saya percaya bahwa setiap bisnis, seperti tubuh manusia, punya 'vital signs' — tanda-tanda vital yang menunjukkan apakah bisnis itu sehat atau sakit. Masalahnya, kebanyakan entrepreneur tidak tahu cara membacanya. Mereka tunggu sampai bisnis 'jatuh sakit' baru panik. Metode Body Checkup Scan saya ciptakan agar Anda bisa diagnosis bisnis Anda SEBELUM terlambat."</em></p>
+</blockquote>
+
+<hr/>
+
+<h2>📋 DAFTAR ISI</h2>
+
+<ol>
+<li><strong>Bab 1 — PENGANTAR:</strong> Kenapa Bisnis Anda Butuh Medical Checkup</li>
+<li><strong>Bab 2 — KONSEP & FILOSOFI:</strong> Anatomi Body Checkup Scan</li>
+<li><strong>Bab 3 — STEP-BY-STEP GUIDE:</strong> 7 Titik Vital Bisnis yang Harus Anda Periksa</li>
+<li><strong>Bab 4 — CASE STUDY NYATA:</strong> Diagnosis Bisnis Retail Skincare & F&B</li>
+<li><strong>Bab 5 — COMMON MISTAKES:</strong> 5 Kesalahan Fatal dalam Diagnosis Bisnis</li>
+<li><strong>Bab 6 — ADVANCED TIPS:</strong> Scanner Level Lanjutan</li>
+<li><strong>Bab 7 — ACTION PLAN:</strong> Template Checkup yang Bisa Langsung Anda Isi</li>
+<li><strong>PENUTUP:</strong> Dari Pasien jadi Dokter Bisnis Anda Sendiri</li>
+<li><strong>RESOURCES:</strong> Tools, Bacaan, dan Link Berguna</li>
+</ol>
+
+<hr/>
+
+<h2>BAB 1: PENGANTAR</h2>
+<h3>Kenapa Bisnis Anda Butuh Medical Checkup</h3>
+
+<hr/>
+
+<h3>ATTENTION: Bisnis Anda Sedang Sakit — Dan Anda Tidak Tahu</h3>
+
+<p>Bayangkan skenario ini:</p>
+
+<p>Anda punya bisnis skincare yang sudah berjalan 2 tahun. Penjualan terlihat "oke" — tidak naik drastis, tidak turun drastis. Anda merasa bisnis Anda "stabil." Tapi setiap bulan, uang yang masuk dan keluar hampir seimbang. Tidak ada pertumbuhan signifikan. Tidak ada tabungan bisnis. Anda bekerja lebih keras dari tahun pertama, tapi hasilnya sama.</p>
+
+<p>Suatu hari, supplier utama Anda naikkan harga. Atau kompetitor baru buka toko di sebelah. Atau ada pandemi kecil-kecilan (seperti yang kita alami bersama). Dan tahu-tahu, bisnis Anda kolaps dalam 3 bulan.</p>
+
+<p><strong>Apa yang salah?</strong></p>
+
+<p>Bisnis Anda sebenarnya sudah "sakit" sejak lama. Ada masalah di cash flow, customer retention, dan profit margin. Tapi Anda tidak pernah memeriksanya. Anda tidak punya "checkup rutin" untuk bisnis Anda.</p>
+
+<p>Inilah yang terjadi ketika entrepreneur menjalankan bisnis tanpa diagnosis.</p>
+
+<hr/>
+
+<h3>INTEREST: Analogi yang Sederhana</h3>
+
+<p>Pikirkan tubuh Anda.</p>
+
+<p>Anda tidak menunggu sampai pingsan baru periksa ke dokter, kan? Idealnya, Anda melakukan medical checkup rutin — tekanan darah, gula darah, kolesterol, fungsi organ. Kenapa? Karena <strong>penyakit yang terdeteksi lebih awal lebih mudah (dan lebih murah) diobati.</strong></p>
+
+<p>Bisnis Anda sama.</p>
+
+<p><strong>Body Checkup Scan</strong> adalah metode untuk melakukan "medical checkup" rutin pada bisnis Anda. Anda akan memeriksa 7 "titik vital" bisnis — indikator kunci yang menunjukkan apakah bisnis Anda sehat atau sedang sakit.</p>
+
+<p>Metode ini dirancang agar:</p>
+<ul>
+<li><strong>Cepat</strong> — bisa dilakukan dalam 1-2 jam</li>
+<li><strong>Sederhana</strong> — tidak perlu background akuntansi atau keuangan</li>
+<li><strong>Actionable</strong> — hasilnya langsung bisa dieksekusi</li>
+<li><strong>Rutin</strong> — bisa dilakukan bulanan atau quarterly</li>
+</ul>
+
+<hr/>
+
+<h3>DESIRE: Apa yang Akan Anda Pelajari</h3>
+
+<p>Dalam ebook ini, Anda akan mempelajari:</p>
+
+<ol>
+<li><strong>7 Titik Vital Bisnis</strong> — 7 area kritis yang harus Anda periksa secara rutin</li>
+<li><strong>Sistem Scoring</strong> — cara memberi "nilai kesehatan" pada setiap area bisnis Anda</li>
+<li><strong>Red Flag Detection</strong> — cara mendeteksi tanda-tanda bahaya sebelum menjadi krisis</li>
+<li><strong>Prescription Framework</strong> — cara merumuskan "resep" perbaikan berdasarkan diagnosis</li>
+<li><strong>Monitoring System</strong> — cara memantau kesehatan bisnis Anda dari waktu ke waktu</li>
+<li><strong>Case Study Lengkap</strong> — contoh nyata diagnosis bisnis skincare dan F&B</li>
+</ol>
+
+<hr/>
+
+<h3>ACTION: Mulai Dengan Jujur</h3>
+
+<p>Satu syarat utama metode ini bekerja: <strong>Anda harus jujur dengan diri sendiri.</strong></p>
+
+<p>Banyak entrepreneur yang "tidak mau tahu" kondisi bisnis mereka yang sebenarnya. Mereka takut melihat angka-angka yang buruk. Mereka lebih suka hidup dalam ilusi "bisnis saya baik-baik saja."</p>
+
+<p>Metode Body Checkup Scan memaksa Anda untuk <strong>melihat kenyataan</strong> — seburuk apa pun — karena hanya dengan melihat kenyataan, Anda bisa memperbaikinya.</p>
+
+<blockquote>
+<p><em>"Langkah pertama menuju kesembuan adalah mengakui bahwa Anda sakit."</em></p>
+</blockquote>
+
+<p>Siap memeriksakan bisnis Anda?</p>
+
+<hr/>
+
+<h2>BAB 2: KONSEP & FILOSOFI</h2>
+<h3>Anatomi Body Checkup Scan</h3>
+
+<hr/>
+
+<h3>2.1 — Apa Itu Body Checkup Scan?</h3>
+
+<blockquote>
+<p><strong>Body Checkup Scan</strong> = Metode diagnosis bisnis sistematis yang memeriksa 7 titik vital bisnis Anda, memberikan skor kesehatan, mendeteksi red flags, dan merumuskan rencana perbaikan — secepat dan sesederhana medical checkup rutin.</p>
+</blockquote>
+
+<hr/>
+
+<h3>2.2 — 7 Titik Vital Bisnis</h3>
+
+<p>Seperti tubuh manusia yang punya tanda-tanda vital (tekanan darah, detak jantung, suhu tubuh, dll), bisnis juga punya 7 tanda vital:</p>
+
+<table><thead><tr>
+<th>#</th>
+<th>Titik Vital</th>
+<th>Analogi Tubuh</th>
+<th>Yang Diukur</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Cash Flow</strong></td>
+<td>Detak Jantung</td>
+<td>Apakah uang mengalir sehat?</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Profit Margin</strong></td>
+<td>Tekanan Darah</td>
+<td>Apakah bisnis Anda cukup untung?</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Customer Retention</strong></td>
+<td>Sistem Imun</td>
+<td>Apakah pelanggan tetap setia?</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Inventory Turnover</strong></td>
+<td>Metabolisme</td>
+<td>Apakah stok bergerak cepat?</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Customer Acquisition Cost (CAC)</strong></td>
+<td>Asupan Nutrisi</td>
+<td>Berapa biaya mendapat pelanggan baru?</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Revenue Growth</strong></td>
+<td>Pertumbuhan Fisik</td>
+<td>Apakah bisnis Anda bertumbuh?</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Operational Efficiency</strong></td>
+<td>Fungsi Organ</td>
+<td>Apakah sistem berjalan efisien?</td>
+</tr>
+
+</tbody></table>
+<p>Jika satu dari tujuh titik vital ini bermasalah, bisnis Anda "sakit." Jika lebih dari satu, Anda mungkin sedang dalam "kondisi kritis."</p>
+
+<hr/>
+
+<h3>2.3 — Filosofi di Balik Metode Ini</h3>
+
+<p><strong>Filosofi 1: Pencegahan Lebih Murah dari Pengobatan</strong></p>
+
+<p>Seperti kesehatan tubuh, mencegah penyakit bisnis jauh lebih murah daripada mengobatinya. Biaya mencegah churn pelanggan (misalnya dengan loyalty program) jauh lebih murah daripada biaya mendapat pelanggan baru.</p>
+
+<p><strong>Filosofi 2: Anda Tidak Bisa Mengelola Apa yang Tidak Anda Ukur</strong></p>
+
+<blockquote>
+<p><em>"What gets measured gets managed."</em> — Peter Drucker</p>
+</blockquote>
+
+<p>Banyak entrepreneur mengelola bisnis berdasarkan "perasaan." "Kurang lebih sepertinya oke." "Kayaknya bulan ini lebih bagus." Ini berbahaya. Dengan Body Checkup Scan, Anda punya DATA — bukan perasaan.</p>
+
+<p><strong>Filosofi 3: Diagnosis Bukan Tujuan — Perbaikan Itu Tujuan</strong></p>
+
+<p>Checkup tanpa tindak lanjut = buang-buang waktu. Setiap diagnosis HARUS diikuti dengan "resep" — rencana perbaikan yang spesifik, terukur, dan ditanggung jawab.</p>
+
+<p><strong>Filosofi 4: Kesehatan Bisnis adalah Amanah</strong></p>
+
+<p>Dalam Islam, bisnis yang sehat adalah amanah. Allah SWT memerintahkan kita untuk menjaga amanah dengan baik. Menjalankan bisnis tanpa diagnosis — sementara bisnis itu sebenarnya "sakit" — adalah bentuk menyia-nyiakan amanah.</p>
+
+<blockquote>
+<p><em>"Sesungguhnya Allah menyuruh kamu menyampaikan amanah kepada yang berhak menerimanya."</em> (QS. An-Nisa: 58)</p>
+</blockquote>
+
+<p>Menjaga kesehatan bisnis = menjaga amanah.</p>
+
+<hr/>
+
+<h3>2.4 — Sistem Scoring: Traffic Light System</h3>
+
+<p>Setelah memeriksa setiap titik vital, Anda akan memberikan skor:</p>
+
+<p>🟢 <strong>HIJAU (Sehat)</strong> — Area ini dalam kondisi baik. Pertahankan dan optimalkan.</p>
+
+<p>🟡 <strong>KUNING (Waspada)</strong> — Area ini ada tanda-tanda masalah. Perlu perhatian dan perbaikan dalam 30 hari ke depan.</p>
+
+<p>🔴 <strong>MERAH (Kritis)</strong> — Area ini dalam kondisi berbahaya. Perlu tindakan segera — dalam 7 hari ke depan.</p>
+
+<p><strong>Cara menentukan skor:</strong></p>
+
+<p>Untuk setiap titik vital, ada 3-5 indikator spesifik. Anda akan menilai setiap indikator, lalu menentukan skor keseluruhan.</p>
+
+<p>Kami akan bahas indikator spesifik untuk setiap titik vital di Bab 3.</p>
+
+<hr/>
+
+<h3>2.5 — Frekuensi Checkup</h3>
+
+<table><thead><tr>
+<th>Frekuensi</th>
+<th>Tindakan</th>
+<th>Untuk Siapa</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Mingguan</strong></td>
+<td>Cek Cash Flow & Revenue Growth</td>
+<td>Bisnis baru (< 1 tahun) atau bisnis dalam kondisi kritis</td>
+</tr>
+<tr>
+<td><strong>Bulanan</strong></td>
+<td>Cek semua 7 titik vital</td>
+<td>Bisnis yang sudah stabil tapi ingin bertumbuh</td>
+</tr>
+<tr>
+<td><strong>Quarterly</strong></td>
+<td>Cek mendalam + trend analysis</td>
+<td>Bisnis yang sudah mapan, untuk optimasi</td>
+</tr>
+
+</tbody></table>
+<p><strong>Rekomendasi:</strong> Jika Anda belum pernah melakukan diagnosis bisnis sama sekali, lakukan <strong>full checkup</strong> (semua 7 titik vital) SEKARANG. Kemudian lanjutkan dengan frekuensi bulanan.</p>
+
+<hr/>
+
+<h2>BAB 3: STEP-BY-STEP GUIDE</h2>
+<h3>7 Titik Vital Bisnis yang Harus Anda Periksi</h3>
+
+<hr/>
+
+<h3>TITIK VITAL #1: CASH FLOW (Detak Jantung)</h3>
+
+<p><strong>Pertanyaan utama:</strong> Apakah uang di bisnis Anda mengalir sehat?</p>
+
+<p>Cash flow adalah darah bisnis. Anda bisa punya penjualan tinggi, tapi jika cash flow buruk, bisnis Anda bisa mati. Ini adalah penyebab #1 kegagalan bisnis — bukan kurangnya penjualan, tapi kurangnya cash.</p>
+
+<h4>Indikator yang Diperiksa:</h4>
+
+<p><strong>1a. Cash Flow Positif vs. Negatif</strong></p>
+<ul>
+<li>Apakah uang masuk > uang keluar dalam 3 bulan terakhir?</li>
+<li>Hitung: Total Pendapatan - Total Pengeluaran = ?</li>
+</ul>
+
+<p><strong>1b. Cash Reserve (Dana Darurat Bisnis)</strong></p>
+<ul>
+<li>Berapa bulan operasional bisnis yang bisa Anda cover jika pendapatan berhenti total?</li>
+<li>Formula: Kas tersedia / Biaya operasional bulanan = ___ bulan</li>
+<li>Target: minimal 3 bulan</li>
+</ul>
+
+<p><strong>1c. Piutang vs. Hutang</strong></p>
+<ul>
+<li>Apakah Anda punya piutang yang belum tertagih?</li>
+<li>Apakah Anda punya hutang yang jatuh tempo dalam 30 hari ke depan?</li>
+<li>Rasio ideal: Piutang < Hutang (artinya Anda tidak terlalu bergantung pada orang yang belum bayar)</li>
+</ul>
+
+<p><strong>1d. Payment Terms</strong></p>
+<ul>
+<li>Apakah supplier Anda memberi tempo pembayaran?</li>
+<li>Apakah pelanggan Anda bayar langsung atau pakai sistem tempo?</li>
+</ul>
+
+<h4>Scoring:</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>🟢 Hijau</th>
+<th>🟡 Kuning</th>
+<th>🔴 Merah</th>
+</tr></thead><tbody>
+<tr>
+<td>Cash flow</td>
+<td>Positif 3 bulan terakhir</td>
+<td>Fluktuatif (kadang +, kadang -)</td>
+<td>Negatif 3 bulan terakhir</td>
+</tr>
+<tr>
+<td>Cash reserve</td>
+<td>> 3 bulan</td>
+<td>1-3 bulan</td>
+<td>< 1 bulan</td>
+</tr>
+<tr>
+<td>Piutang vs. Hutang</td>
+<td>Piutang < Hutang</td>
+<td>Piutang ≈ Hutang</td>
+<td>Piutang > Hutang</td>
+</tr>
+
+<h4>Red Flags:</h4>
+</tbody></table>
+<ul>
+<li>🔴 Anda sering "pinjam dana pribadi" ke bisnis</li>
+<li>🔴 Anda bayar supplier terlambat karena tidak ada cash</li>
+<li>🔴 Anda tidak tahu persis berapa kas yang tersedia hari ini</li>
+</ul>
+
+<hr/>
+
+<h3>TITIK VITAL #2: PROFIT MARGIN (Tekanan Darah)</h3>
+
+<p><strong>Pertanyaan utama:</strong> Apakah bisnis Anda cukup untung?</p>
+
+<p>Penjualan tinggi tanpa profit margin yang sehat = Anda bekerja untuk orang lain (supplier, karyawan, landlord).</p>
+
+<h4>Indikator yang Diperiksa:</h4>
+
+<p><strong>2a. Gross Profit Margin</strong></p>
+<ul>
+<li>Formula: (Pendapatan - Harga Pokok Penjualan) / Pendapatan × 100%</li>
+<li>Target tergantung industri:</li>
+<li>F&B: 50-70%</li>
+<li>Fashion: 40-60%</li>
+<li>Skincare: 50-70%</li>
+<li>Retail umum: 25-40%</li>
+</ul>
+
+<p><strong>2b. Net Profit Margin</strong></p>
+<ul>
+<li>Formula: (Pendapatan - Semua Biaya) / Pendapatan × 100%</li>
+<li>Target: minimal 10-15% untuk bisnis kecil</li>
+</ul>
+
+<p><strong>2c. Margin per Produk/Layanan</strong></p>
+<ul>
+<li>Produk mana yang paling tinggi margin-nya?</li>
+<li>Produk mana yang paling rendah (atau bahkan negatif)?</li>
+</ul>
+
+<p><strong>2d. Tren Margin</strong></p>
+<ul>
+<li>Apakah margin Anda naik, turun, atau stabil dalam 6 bulan terakhir?</li>
+</ul>
+
+<h4>Scoring:</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>🟢 Hijau</th>
+<th>🟡 Kuning</th>
+<th>🔴 Merah</th>
+</tr></thead><tbody>
+<tr>
+<td>Gross margin</td>
+<td>Di atas rata-rata industri</td>
+<td>Sesuai rata-rata</td>
+<td>Di bawah rata-rata</td>
+</tr>
+<tr>
+<td>Net margin</td>
+<td>> 15%</td>
+<td>5-15%</td>
+<td>< 5% (atau negatif)</td>
+</tr>
+<tr>
+<td>Tren margin</td>
+<td>Naik/stabil</td>
+<td>Turun sedikit (< 10%)</td>
+<td>Turun signifikan (> 10%)</td>
+</tr>
+
+<h4>Red Flags:</h4>
+</tbody></table>
+<ul>
+<li>🔴 Anda tahu omzet tapi tidak tahu profit</li>
+<li>🔴 Margin Anda terus turun tapi Anda tidak tahu mengapa</li>
+<li>🔴 Anda jual banyak tapi "tidak terasa uangnya"</li>
+</ul>
+
+<hr/>
+
+<h3>TITIK VITAL #3: CUSTOMER RETENTION (Sistem Imun)</h3>
+
+<p><strong>Pertanyaan utama:</strong> Apakah pelanggan Anda tetap setia?</p>
+
+<p>Mendapatkan pelanggan baru 5-7x lebih mahal daripada mempertahankan pelanggan lama. Jika retention Anda buruk, Anda sedang berada di "ember yang bocor" — terus mengisi tapi terus bocor.</p>
+
+<h4>Indikator yang Diperiksa:</h4>
+
+<p><strong>3a. Repeat Purchase Rate</strong></p>
+<ul>
+<li>Berapa % pelanggan yang membeli lagi dalam 90 hari terakhir?</li>
+<li>Formula: Jumlah pelanggan repeat / Total pelanggan × 100%</li>
+<li>Target: > 30% untuk retail, > 50% untuk F&B</li>
+</ul>
+
+<p><strong>3b. Customer Lifetime Value (CLV)</strong></p>
+<ul>
+<li>Berapa total uang yang dihabiskan satu pelanggan selama mereka jadi pelanggan Anda?</li>
+<li>Formula: Rata-rata nilai transaksi × Frekuensi pembelian × Durasi rata-rata pelanggan</li>
+<li>Semakin tinggi, semakin baik</li>
+</ul>
+
+<p><strong>3c. Churn Rate</strong></p>
+<ul>
+<li>Berapa % pelanggan yang "hilang" (tidak membeli lagi) dalam 90 hari terakhir?</li>
+<li>Target: < 20% per quarter</li>
+</ul>
+
+<p><strong>3d. Net Promoter Score (NPS)</strong></p>
+<ul>
+<li>Tanya 10 pelanggan: "Dari skala 1-10, seberapa mungkin Anda merekomendasikan bisnis kami ke teman?"</li>
+<li>NPS = % Promotor (9-10) - % Detraktor (0-6)</li>
+<li>Target: > 30</li>
+</ul>
+
+<h4>Scoring:</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>🟢 Hijau</th>
+<th>🟡 Kuning</th>
+<th>🔴 Merah</th>
+</tr></thead><tbody>
+<tr>
+<td>Repeat rate</td>
+<td>> 40%</td>
+<td>20-40%</td>
+<td>< 20%</td>
+</tr>
+<tr>
+<td>CLV</td>
+<td>Naik dari bulan ke bulan</td>
+<td>Stabil</td>
+<td>Turun</td>
+</tr>
+<tr>
+<td>Churn rate</td>
+<td>< 15%</td>
+<td>15-30%</td>
+<td>> 30%</td>
+</tr>
+<tr>
+<td>NPS</td>
+<td>> 30</td>
+<td>0-30</td>
+<td>Negatif</td>
+</tr>
+
+<h4>Red Flags:</h4>
+</tbody></table>
+<ul>
+<li>🔴 Anda tidak tahu siapa pelanggan tetap Anda</li>
+<li>🔴 Setiap bulan Anda harus "cari pelanggan baru" dari nol</li>
+<li>🔴 Banyak pelanggan komplain tapi Anda tidak tahu berapa jumlahnya</li>
+</ul>
+
+<hr/>
+
+<h3>TITIK VITAL #4: INVENTORY TURNOVER (Metabolisme)</h3>
+
+<p><strong>Pertanyaan utama:</strong> Apakah stok Anda bergerak cepat?</p>
+
+<p>Stok yang tidak bergerak = uang yang mengendap. Stok yang habis terlalu cepat = kehilangan penjualan. Anda perlu "metabolisme" yang sehat.</p>
+
+<h4>Indikator yang Diperiksa:</h4>
+
+<p><strong>4a. Inventory Turnover Ratio</strong></p>
+<ul>
+<li>Formula: Harga Pokok Penjualan / Rata-rata Nilai Stok</li>
+<li>Target tergantung industri:</li>
+<li>F&B: 12-24x per tahun (stok cepat habis)</li>
+<li>Fashion: 4-6x per tahun (seasonal)</li>
+<li>Skincare: 4-8x per tahun</li>
+</ul>
+
+<p><strong>4b. Dead Stock Percentage</strong></p>
+<ul>
+<li>Berapa % stok yang tidak terjual dalam 90 hari terakhir?</li>
+<li>Target: < 10%</li>
+</ul>
+
+<p><strong>4c. Stockout Frequency</strong></p>
+<ul>
+<li>Berapa kali produk best-seller Anda kehabisan stok dalam 30 hari terakhir?</li>
+<li>Target: 0-1x per bulan</li>
+</ul>
+
+<p><strong>4d. Stok vs. Penjualan Ratio</strong></p>
+<ul>
+<li>Berapa bulan stok yang Anda punya bisa cover penjualan?</li>
+<li>Formula: Nilai stok / Penjualan bulanan</li>
+<li>Target: 1-2 bulan (terlalu banyak = overstock, terlalu sedikit = risk of stockout)</li>
+</ul>
+
+<h4>Scoring:</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>🟢 Hijau</th>
+<th>🟡 Kuning</th>
+<th>🔴 Merah</th>
+</tr></thead><tbody>
+<tr>
+<td>Turnover ratio</td>
+<td>Sesuai target industri</td>
+<td>Sedikit di bawah</td>
+<td>Jauh di bawah</td>
+</tr>
+<tr>
+<td>Dead stock</td>
+<td>< 10%</td>
+<td>10-25%</td>
+<td>> 25%</td>
+</tr>
+<tr>
+<td>Stockout</td>
+<td>0-1x/bulan</td>
+<td>2-3x/bulan</td>
+<td>> 3x/bulan</td>
+</tr>
+<tr>
+<td>Stok ratio</td>
+<td>1-2 bulan</td>
+<td>2-3 bulan</td>
+<td>> 3 bulan</td>
+</tr>
+
+<h4>Red Flags:</h4>
+</tbody></table>
+<ul>
+<li>🔴 Anda punya stok yang sudah bertahun-tahun tidak laku</li>
+<li>🔴 Produk best-seller sering kehabisan</li>
+<li>🔴 Anda tidak tahu persis berapa nilai stok Anda</li>
+</ul>
+
+<hr/>
+
+<h3>TITIK VITAL #5: CUSTOMER ACQUISITION COST / CAC (Asupan Nutrisi)</h3>
+
+<p><strong>Pertanyaan utama:</strong> Berapa biaya Anda untuk mendapat satu pelanggan baru?</p>
+
+<p>Jika biaya mendapat pelanggan baru lebih tinggi dari nilai yang mereka bawa, Anda sedang "makan lebih banyak dari yang Anda masak."</p>
+
+<h4>Indikator yang Diperiksa:</h4>
+
+<p><strong>5a. CAC (Customer Acquisition Cost)</strong></p>
+<ul>
+<li>Formula: Total biaya marketing & penjualan / Jumlah pelanggan baru</li>
+<li>Contoh: Anda spend Rp 2 juta untuk iklan bulan ini, dapat 50 pelanggan baru → CAC = Rp 40.000</li>
+</ul>
+
+<p><strong>5b. CAC vs. CLV Ratio</strong></p>
+<ul>
+<li>Formula: CLV / CAC</li>
+<li>Target: minimal 3:1 (artinya setiap Rp 1 yang Anda spend untuk dapat pelanggan, Anda dapat kembali Rp 3)</li>
+<li>Jika < 3:1, Anda over-spending atau under-monetizing</li>
+</ul>
+
+<p><strong>5c. Channel Efficiency</strong></p>
+<ul>
+<li>Channel marketing mana yang paling murah CAC-nya?</li>
+<li>(Instagram ads, Google ads, word of mouth, marketplace, dll)</li>
+</ul>
+
+<p><strong>5d. Conversion Rate</strong></p>
+<ul>
+<li>Dari orang yang tahu bisnis Anda, berapa % yang benar-benar membeli?</li>
+<li>Formula: Jumlah pembeli / Jumlah orang yang tahu × 100%</li>
+<li>Target: 2-5% untuk online, 20-40% untuk toko fisik</li>
+</ul>
+
+<h4>Scoring:</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>🟢 Hijau</th>
+<th>🟡 Kuning</th>
+<th>🔴 Merah</th>
+</tr></thead><tbody>
+<tr>
+<td>CAC vs. CLV</td>
+<td>> 3:1</td>
+<td>2:1 - 3:1</td>
+<td>< 2:1</td>
+</tr>
+<tr>
+<td>Channel efficiency</td>
+<td>Ada channel dengan CAC rendah</td>
+<td>Semua channel CAC mirip</td>
+<td>Semua channel CAC tinggi</td>
+</tr>
+<tr>
+<td>Conversion rate</td>
+<td>Di atas rata-rata</td>
+<td>Sesuai rata-rata</td>
+<td>Di bawah rata-rata</td>
+</tr>
+
+<h4>Red Flags:</h4>
+</tbody></table>
+<ul>
+<li>🔴 Anda tidak tahu berapa yang Anda spend untuk marketing</li>
+<li>🔴 Anda tahu spend marketing tapi tidak tahu berapa pelanggan yang didapat</li>
+<li>🔴 Anda merasa "sudah banyak iklan tapi tidak ada yang beli"</li>
+</ul>
+
+<hr/>
+
+<h3>TITIK VITAL #6: REVENUE GROWTH (Pertumbuhan Fisik)</h3>
+
+<p><strong>Pertanyaan utama:</strong> Apakah bisnis Anda bertumbuh?</p>
+
+<p>Bisnis yang tidak bertumbuh = bisnis yang menyusut. Dalam ekonomi yang tumbuh, jika Anda tidak tumbuh, Anda sebenarnya mundur relatif terhadap pasar.</p>
+
+<h4>Indikator yang Diperiksa:</h4>
+
+<p><strong>6a. Month-over-Month (MoM) Growth</strong></p>
+<ul>
+<li>Formula: (Pendapatan bulan ini - Pendapatan bulan lalu) / Pendapatan bulan lalu × 100%</li>
+<li>Target: > 5% per bulan untuk bisnis kecil</li>
+</ul>
+
+<p><strong>6b. Year-over-Year (YoY) Growth</strong></p>
+<ul>
+<li>Formula: (Pendapatan bulan ini - Pendaparan bulan yang sama tahun lalu) / Pendapatan bulan yang sama tahun lalu × 100%</li>
+<li>Target: > 20% per tahun</li>
+</ul>
+
+<p><strong>6c. Revenue Diversification</strong></p>
+<ul>
+<li>Berapa % pendapatan dari sumber terbesar?</li>
+<li>Jika > 70% pendapatan dari 1 sumber (1 produk, 1 pelanggan besar, 1 channel), Anda berisiko tinggi</li>
+</ul>
+
+<p><strong>6d. Revenue per Customer</strong></p>
+<ul>
+<li>Formula: Total pendapatan / Jumlah pelanggan</li>
+<li>Target: naik dari waktu ke waktu (artinya setiap pelanggan makin banyak belanja)</li>
+</ul>
+
+<h4>Scoring:</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>🟢 Hijau</th>
+<th>🟡 Kuning</th>
+<th>🔴 Merah</th>
+</tr></thead><tbody>
+<tr>
+<td>MoM growth</td>
+<td>> 5%</td>
+<td>0-5%</td>
+<td>Negatif</td>
+</tr>
+<tr>
+<td>YoY growth</td>
+<td>> 20%</td>
+<td>5-20%</td>
+<td>< 5%</td>
+</tr>
+<tr>
+<td>Diversifikasi</td>
+<td>Tidak ada sumber > 50%</td>
+<td>Sumber terbesar 50-70%</td>
+<td>Sumber terbesar > 70%</td>
+</tr>
+<tr>
+<td>Revenue per customer</td>
+<td>Naik</td>
+<td>Stabil</td>
+<td>Turun</td>
+</tr>
+
+<h4>Red Flags:</h4>
+</tbody></table>
+<ul>
+<li>🔴 Pendapatan flat selama 6 bulan atau lebih</li>
+<li>🔴 Anda sangat bergantung pada 1 produk/pelanggan/channel</li>
+<li>🔴 Revenue per customer terus turun</li>
+</ul>
+
+<hr/>
+
+<h3>TITIK VITAL #7: OPERATIONAL EFFICIENCY (Fungsi Organ)</h3>
+
+<p><strong>Pertanyaan utama:</strong> Apakah sistem bisnis Anda berjalan efisien?</p>
+
+<p>Bisnis yang tidak efisien = bisnis yang membuang-buang waktu, uang, dan energi. Anda bekerja keras tapi hasilnya tidak sebanding.</p>
+
+<h4>Indikator yang Diperiksa:</h4>
+
+<p><strong>7a. Labor Productivity</strong></p>
+<ul>
+<li>Formula: Total pendapatan / Jumlah karyawan</li>
+<li>Bandingkan dengan rata-rata industri</li>
+</ul>
+
+<p><strong>7b. Cost per Transaction</strong></p>
+<ul>
+<li>Formula: Total biaya operasional / Jumlah transaksi</li>
+<li>Target: turun dari waktu ke waktu (artinya Anda makin efisien)</li>
+</ul>
+
+<p><strong>7c. Waste/Shrinkage Rate</strong></p>
+<ul>
+<li>Berapa % produk yang terbuang (expired, rusak, hilang)?</li>
+<li>Target: < 2% untuk retail, < 5% untuk F&B</li>
+</ul>
+
+<p><strong>7d. Process Bottlenecks</strong></p>
+<ul>
+<li>Di mana "macet" dalam operasional Anda?</li>
+<li>(Proses order yang lama, komunikasi internal yang lambat, pengiriman yang sering telat)</li>
+</ul>
+
+<p><strong>7e. Technology Utilization</strong></p>
+<ul>
+<li>Apakah Anda menggunakan tools/software yang tepat untuk mengotomatisasi tugas berulang?</li>
+<li>(POS system, inventory management, CRM, accounting software)</li>
+</ul>
+
+<h4>Scoring:</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>🟢 Hijau</th>
+<th>🟡 Kuning</th>
+<th>🔴 Merah</th>
+</tr></thead><tbody>
+<tr>
+<td>Labor productivity</td>
+<td>Di atas rata-rata</td>
+<td>Sesuai rata-rata</td>
+<td>Di bawah rata-rata</td>
+</tr>
+<tr>
+<td>Cost per transaction</td>
+<td>Turun dari waktu ke waktu</td>
+<td>Stabil</td>
+<td>Naik</td>
+</tr>
+<tr>
+<td>Waste rate</td>
+<td>< 2%</td>
+<td>2-5%</td>
+<td>> 5%</td>
+</tr>
+<tr>
+<td>Bottlenecks</td>
+<td>Tidak ada signifikan</td>
+<td>Ada 1-2</td>
+<td>Ada > 2</td>
+</tr>
+<tr>
+<td>Technology</td>
+<td>Menggunakan tools tepat</td>
+<td>Sebagian manual</td>
+<td>Seluruhnya manual</td>
+</tr>
+
+<h4>Red Flags:</h4>
+</tbody></table>
+<ul>
+<li>🔴 Anda merasa "selalu sibuk" tapi output tidak sebanding</li>
+<li>🔴 Banyak tugas yang dilakukan manual yang seharusnya bisa otomatis</li>
+<li>🔴 Produk sering expired/rusak sebelum terjual</li>
+<li>🔴 Karyawan sering melakukan tugas yang sama berulang kali</li>
+</ul>
+
+<hr/>
+
+<h2>BAB 4: CASE STUDY NYATA</h2>
+<h3>Diagnosis Bisnis "GLOW SKINCARE" dan "WARUNG SEDAP"</h3>
+
+<hr/>
+
+<h3>CASE STUDY 1: Glow Skincare — Bisnis Retail Skincare</h3>
+
+<p><strong>Catatan:</strong> <em>"Glow Skincare" adalah nama fiktif. Kasus ini diambil dari pola umum bisnis retail skincare yang Imam temui dalam praktik consulting.</em></p>
+
+<h4>Latar Belakang</h4>
+
+<p>Glow Skincare adalah bisnis retail skincare yang didirikan oleh Sari (bukan nama asli) di Jakarta pada tahun 2021. Bisnis ini menjual produk skincare lokal dan impor melalui toko fisik dan online (Shopee, Instagram, WhatsApp).</p>
+
+<p><strong>Kondisi saat checkup (Q1 2024):</strong></p>
+<ul>
+<li>Omzet: Rp 35 juta/bulan</li>
+<li>Karyawan: 3 orang (termasuk Sari)</li>
+<li>Produk: ~80 SKU</li>
+<li>Channel: toko fisik, Shopee, Instagram, WhatsApp</li>
+<li>Sudah berjalan 3 tahun</li>
+</ul>
+
+<p><strong>Keluhan Sari:</strong> "Omzet saya stuck di Rp 35 juta. Sudah 6 bulan tidak naik. Saya sudah coba berbagai macam cara — diskon, iklan, tambah produk — tapi tidak ada yang berhasil. Rasanya saya sudah melakukan semuanya."</p>
+
+<p>Mari kita diagnosis.</p>
+
+<hr/>
+
+<h4>HASIL BODY CHECKUP SCAN: GLOW SKINCARE</h4>
+
+<p><strong>TITIK VITAL #1: CASH FLOW</strong></p>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Hasil</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>Cash flow 3 bulan</td>
+<td>Positif tipis (+Rp 2-3 juta/bulan)</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Cash reserve</td>
+<td>1.5 bulan operasional</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Piutang vs. Hutang</td>
+<td>Piutang Rp 8 juta (pelanggan tempo), Hutang supplier Rp 12 juta</td>
+<td>🟡</td>
+</tr>
+
+</tbody></table>
+<p><strong>Diagnosis:</strong> Cash flow positif tapi tipis. Cash reserve kurang dari 3 bulan. Piutang cukup besar — artinya ada uang "tertahan" di pelanggan.</p>
+
+<p><strong>TITIK VITAL #2: PROFIT MARGIN</strong></p>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Hasil</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>Gross margin</td>
+<td>45% (rata-rata industri skincare: 50-70%)</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Net margin</td>
+<td>8% (target: > 15%)</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Tren margin</td>
+<td>Turun 15% dalam 6 bulan terakhir</td>
+<td>🔴</td>
+</tr>
+
+</tbody></table>
+<p><strong>Diagnosis:</strong> Ini RED FLAG besar. Net margin 8% terlalu rendah. Tren margin turun drastis. Penyebab: biaya operasional naik (sewa toko naik, biaya iklan naik) tapi harga jual tidak naik.</p>
+
+<p><strong>TITIK VITAL #3: CUSTOMER RETENTION</strong></p>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Hasil</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>Repeat purchase rate</td>
+<td>18% (target: > 30%)</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>CLV</td>
+<td>Rp 180.000 per pelanggan</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Churn rate</td>
+<td>35% per quarter</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>NPS</td>
+<td>15 (target: > 30)</td>
+<td>🟡</td>
+</tr>
+
+</tbody></table>
+<p><strong>Diagnosis:</strong> Retention sangat buruk. 35% pelanggan hilang setiap quarter. Repeat rate hanya 18%. Ini berarti Glow Skincare terus-menerus harus "isi ulang" pelanggan baru — yang mahal.</p>
+
+<p><strong>TITIK VITAL #4: INVENTORY TURNOVER</strong></p>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Hasil</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>Turnover ratio</td>
+<td>2.8x per tahun (target: 4-8x)</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Dead stock</td>
+<td>22% (target: < 10%)</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Stockout</td>
+<td>4x per bulan untuk produk best-seller</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Stok ratio</td>
+<td>3.5 bulan (target: 1-2 bulan)</td>
+<td>🔴</td>
+</tr>
+
+</tbody></table>
+<p><strong>Diagnosis:</strong> MASALAH KRITIS. Stok bergerak sangat lambat. 22% stok mati. Best-seller sering kehabisan. Uang mengendap di stok yang tidak bergerak.</p>
+
+<p><strong>TITIK VITAL #5: CAC</strong></p>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Hasil</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>CAC</td>
+<td>Rp 65.000 per pelanggan baru</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>CAC vs. CLV</td>
+<td>180.000 / 65.000 = 2.7:1 (target: > 3:1)</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Channel efficiency</td>
+<td>Instagram ads paling murah (Rp 45K), Shopee paling mahal (Rp 95K)</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Conversion rate</td>
+<td>1.8% (target: 2-5%)</td>
+<td>🟡</td>
+</tr>
+
+</tbody></table>
+<p><strong>Diagnosis:</strong> CAC vs. CLV ratio di bawah 3:1. Artinya, biaya mendapat pelanggan baru hampir "makan" nilai pelanggan itu sendiri. Ditambah retention buruk (pelanggan tidak repeat), ini menjadi lingkaran setan.</p>
+
+<p><strong>TITIK VITAL #6: REVENUE GROWTH</strong></p>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Hasil</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>MoM growth</td>
+<td>0-2% (target: > 5%)</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>YoY growth</td>
+<td>8% (target: > 20%)</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Diversifikasi</td>
+<td>60% pendapatan dari Shopee</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Revenue per customer</td>
+<td>Turun 10% dalam 6 bulan</td>
+<td>🔴</td>
+</tr>
+
+</tbody></table>
+<p><strong>Diagnosis:</strong> Pertumbuhan hampir nol. Terlalu bergantung pada Shopee (60%). Revenue per customer turun — artinya pelanggan yang ada makin sedikit belanja.</p>
+
+<p><strong>TITIK VITAL #7: OPERATIONAL EFFICIENCY</strong></p>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Hasil</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>Labor productivity</td>
+<td>Rp 11.7 juta/karyawan (rata-rata: Rp 15-20 juta)</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Cost per transaction</td>
+<td>Naik 20% dalam 6 bulan</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Waste rate</td>
+<td>4.5% (produk expired)</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Bottlenecks</td>
+<td>Order processing lambat, stok sering tidak akurat</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Technology</td>
+<td>Menggunakan WhatsApp manual untuk order, tidak ada inventory system</td>
+<td>🔴</td>
+</tr>
+
+</tbody></table>
+<p><strong>Diagnosis:</strong> Operasional manual dan tidak efisien. Tidak ada inventory system — stok sering tidak akurat. Order processing lambat karena manual via WhatsApp.</p>
+
+<hr/>
+
+<h4>RINGKASAN DIAGNOSIS: GLOW SKINCARE</h4>
+
+<table><thead><tr>
+<th>#</th>
+<th>Titik Vital</th>
+<th>Skor</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>Cash Flow</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Profit Margin</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Customer Retention</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Inventory Turnover</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CAC</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Revenue Growth</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Operational Efficiency</td>
+<td>🔴</td>
+</tr>
+
+</tbody></table>
+<p><strong>1 Hijau. 2 Kuning. 4 Merah.</strong></p>
+
+<p><strong>Diagnosis Utama:</strong> Glow Skincare dalam kondisi KRITIS. Masalah utamanya adalah <strong>inventory management yang buruk</strong> yang menyebabkan <strong>cash flow terhambat</strong>, <strong>margin tertekan</strong>, dan <strong>operasional tidak efisien</strong>. Ditambah <strong>retention yang sangat rendah</strong>, bisnis ini sedang "berdarah" dari banyak sisi.</p>
+
+<hr/>
+
+<h4>PRESCRIPTION (Resep Perbaikan):</h4>
+
+<p><strong>Prioritas 1 (Tindakan dalam 7 hari):</strong></p>
+
+<ol>
+<li><strong>Inventory Emergency Clearance</strong></li>
+</ol>
+<ul>
+<li>Jual semua dead stock (22%) dengan diskon 30-50%</li>
+<li>Tujuan: bebaskan cash yang mengendap</li>
+<li>Target: dapatkan minimal Rp 15 juta dari clearance</li>
+</ul>
+
+<ol>
+<li><strong>Hentikan sementara iklan Shopee</strong></li>
+</ol>
+<ul>
+<li>CAC Shopee paling mahal (Rp 95K) dan conversion rendah</li>
+<li>Pindahkan budget ke Instagram ads (CAC lebih murah)</li>
+</ul>
+
+<p><strong>Prioritas 2 (Tindakan dalam 30 hari):</strong></p>
+
+<ol>
+<li><strong>Implementasi Inventory System Sederhana</strong></li>
+</ol>
+<ul>
+<li>Gunakan tools gratis (Google Sheets template atau aplikasi inventory murah)</li>
+<li>Set reorder point untuk setiap produk</li>
+<li>Lakukan stock opname mingguan</li>
+</ul>
+
+<ol>
+<li><strong>SKU Rationalization</strong></li>
+</ol>
+<ul>
+<li>Evaluasi 80 SKU. Identifikasi 20% terbaik (Pareto principle)</li>
+<li>Pertimbangkan hapus SKU yang tidak bergerak dalam 90 hari</li>
+<li>Fokus pada 30-40 SKU terbaik</li>
+</ul>
+
+<ol>
+<li><strong>Customer Retention Program</strong></li>
+</ol>
+<ul>
+<li>Buat program "Skincare Routine Reminder": kirim WhatsApp 30 hari setelah pembelian: "Udah habis belum produknya? Waktunya isi ulang!"</li>
+<li>Buat loyalty card: belanja 5x, gratis 1 produk kecil</li>
+<li>Kirim edukasi skincare via WhatsApp broadcast (bukan promosi langsung)</li>
+</ul>
+
+<p><strong>Prioritas 3 (Tindakan dalam 90 hari):</strong></p>
+
+<ol>
+<li><strong>Naikkan harga 10-15% untuk produk premium</strong></li>
+</ol>
+<ul>
+<li>Justifikasi dengan packaging yang lebih baik dan edukasi kandungan produk</li>
+<li>Target: naikkan gross margin dari 45% ke 55%</li>
+</ul>
+
+<ol>
+<li><strong>Otomatisasi order processing</strong></li>
+</ol>
+<ul>
+<li>Gunakan tools seperti Majoo, Ol Kasir, atau sejenisnya</li>
+<li>Integrasikan dengan inventory system</li>
+<li>Target: kurangi order processing time dari 30 menit ke 5 menit</li>
+</ul>
+
+<hr/>
+
+<h4>HASIL SETELAH 3 BULAN:</h4>
+
+<p>Setelah mengikuti prescription di atas, hasil Glow Skincare setelah 3 bulan:</p>
+
+<table><thead><tr>
+<th>Metrik</th>
+<th>Sebelum</th>
+<th>Sesudah</th>
+<th>Perubahan</th>
+</tr></thead><tbody>
+<tr>
+<td>Omzet</td>
+<td>Rp 35 juta</td>
+<td>Rp 48 juta</td>
+<td>+37%</td>
+</tr>
+<tr>
+<td>Net margin</td>
+<td>8%</td>
+<td>14%</td>
+<td>+75%</td>
+</tr>
+<tr>
+<td>Dead stock</td>
+<td>22%</td>
+<td>7%</td>
+<td>-68%</td>
+</tr>
+<tr>
+<td>Repeat rate</td>
+<td>18%</td>
+<td>32%</td>
+<td>+78%</td>
+</tr>
+<tr>
+<td>CAC</td>
+<td>Rp 65K</td>
+<td>Rp 42K</td>
+<td>-35%</td>
+</tr>
+<tr>
+<td>CLV</td>
+<td>Rp 180K</td>
+<td>Rp 260K</td>
+<td>+44%</td>
+</tr>
+<tr>
+<td>CAC:CLV</td>
+<td>2.7:1</td>
+<td>6.2:1</td>
+<td>+130%</td>
+</tr>
+<tr>
+<td>Waste rate</td>
+<td>4.5%</td>
+<td>1.8%</td>
+<td>-60%</td>
+</tr>
+
+</tbody></table>
+<p><strong>Tidak ada satu "silver bullet" yang mengubah semuanya.</strong> Perbaikan datang dari diagnosis yang tepat, prioritas yang jelas, dan eksekusi yang konsisten.</p>
+
+<hr/>
+
+<h3>CASE STUDY 2: Warung Sedap — Bisnis F&B</h3>
+
+<p><strong>Catatan:</strong> <em>"Warung Sedap" adalah nama fiktif berdasarkan pola umum bisnis F&B yang Imam konsultasikan.</em></p>
+
+<h4>Latar Belakang</h4>
+
+<p>Warung Sedap adalah warung makan sederhana di Surabaya yang dimiliki oleh Pak Budi (bukan nama asli). Menjual nasi campur dan ayam geprek dengan harga Rp 15.000-25.000 per porsi. Berjalan sejak 2020.</p>
+
+<p><strong>Kondisi saat checkup (Q1 2024):</strong></p>
+<ul>
+<li>Omzet: Rp 20 juta/bulan (~800 porsi/bulan)</li>
+<li>Karyawan: 2 orang</li>
+<li>Lokasi: pinggir jalan, dekat kantoran</li>
+<li>Jam buka: 10.00-20.00</li>
+</ul>
+
+<p><strong>Keluhan Pak Budi:</strong> "Penjualan turun drastis sejak 3 bulan lalu. Dulu bisa jual 40-50 porsi per hari, sekarang cuma 25-30. Saya tidak tahu kenapa."</p>
+
+<hr/>
+
+<h4>HASIL BODY CHECKUP SCAN: WARUNG SEDAP</h4>
+
+<p><strong>TITIK VITAL #1: CASH FLOW</strong> → 🟡</p>
+<ul>
+<li>Cash flow positif tapi menipis</li>
+<li>Cash reserve: 1 bulan (bahaya)</li>
+<li>Tidak ada piutang (semua cash)</li>
+</ul>
+
+<p><strong>TITIK VITAL #2: PROFIT MARGIN</strong> → 🔴</p>
+<ul>
+<li>Gross margin: 38% (target F&B: 50-70%)</li>
+<li>Net margin: 3% (sangat berbahaya)</li>
+<li>Tren: margin turun 20% dalam 3 bulan</li>
+<li><strong>Penyebab:</strong> harga bahan baku naik 25% (ayam, minyak, beras) tapi Pak Budi tidak menaikkan harga jual karena takut pelanggan pergi</li>
+</ul>
+
+<p><strong>TITIK VITAL #3: CUSTOMER RETENTION</strong> → 🟡</p>
+<ul>
+<li>Repeat rate: 35% (cukup baik untuk F&B)</li>
+<li>Tapi: frekuensi repeat turun — dulu rata-rata 3x/minggu, sekarang 2x/minggu</li>
+<li>NPS: 25 (cukup baik)</li>
+</ul>
+
+<p><strong>TITIK VITAL #4: INVENTORY TURNOVER</strong> → 🟡</p>
+<ul>
+<li>Turnover: baik (F&B memang cepat)</li>
+<li>Tapi waste rate: 8% (target: < 5%)</li>
+<li><strong>Penyebab:</strong> over-preparation — masak banyak tapi tidak terjual</li>
+</ul>
+
+<p><strong>TITIK VITAL #5: CAC</strong> → 🟢</p>
+<ul>
+<li>CAC: hampir nol (word of mouth + lokasi strategis)</li>
+<li>Ini kekuatan utama Warung Sedap</li>
+</ul>
+
+<p><strong>TITIK VITAL #6: REVENUE GROWTH</strong> → 🔴</p>
+<ul>
+<li>MoM growth: -10% (turun!)</li>
+<li>Penjualan turun dari 40-50 porsi/hari ke 25-30 porsi/hari</li>
+</ul>
+
+<p><strong>TITIK VITAL #7: OPERATIONAL EFFICIENCY</strong> → 🟡</p>
+<ul>
+<li>Proses masak masih manual</li>
+<li>Tidak ada sistem pencatatan penjualan harian</li>
+<li>Pak Budi tidak tahu persis berapa keuntungan per porsi</li>
+</ul>
+
+<hr/>
+
+<h4>DIAGNOSIS UTAMA: WARUNG SEDAP</h4>
+
+<p><strong>Akar masalah:</strong> Margin yang sangat tipis (3%) karena Pak Budi tidak menaikkan harga meskipun biaya bahan baku naik 25%. Ini menciptakan "lingkaran setan": margin tipis → tidak ada uang untuk improve → kualitas turun → pelanggan berkurang → penjualan turun → makin tipis margin.</p>
+
+<p><strong>Masalah sekunder:</strong> Over-preparation menyebabkan waste tinggi (8%). Tidak ada data penjualan harian untuk ambil keputusan.</p>
+
+<hr/>
+
+<h4>PRESCRIPTION:</h4>
+
+<p><strong>Prioritas 1 (7 hari):</strong></p>
+
+<ol>
+<li><strong>Naikkan harga 10%</strong> (dari Rp 15K-25K ke Rp 17K-28K)</li>
+</ol>
+<ul>
+<li>Komunikasikan dengan pelanggan: "Karena kenaikan harga bahan, kami menyesuaikan harga sedikit. Kami pastikan kualitas tetap terjaga."</li>
+<li>Riset: harga kompetitor di sekitar sudah Rp 18K-30K. Harga baru Pak Budi masih kompetitif.</li>
+</ul>
+
+<ol>
+<li><strong>Mulai catat penjualan harian</strong></li>
+</ol>
+<ul>
+<li>Catat: berapa porsi terjual per hari, berapa bahan terpakai, berapa waste</li>
+<li>Gunakan buku sederhana atau Google Sheets</li>
+</ul>
+
+<p><strong>Prioritas 2 (30 hari):</strong></p>
+
+<ol>
+<li><strong>Adjust portion preparation berdasarkan data</strong></li>
+</ol>
+<ul>
+<li>Setelah 1 minggu catat data, tentukan: berapa porsi optimal per hari</li>
+<li>Kurangi over-pro preparation untuk turunkan waste</li>
+</ul>
+
+<ol>
+<li><strong>Tambah menu "value meal"</strong></li>
+</ol>
+<ul>
+<li>Paket nasi + ayam + minum = Rp 22.000 (sebelnya terpisah Rp 25.000)</li>
+<li>Tujuan: naikkan average order value dan perceived value</li>
+</ul>
+
+<p><strong>Prioritas 3 (90 hari):</strong></p>
+
+<ol>
+<li><strong>Buat "langganan kantor" program</strong></li>
+</ol>
+<ul>
+<li>Tawarkan ke kantor-kantor terdekat: paket makan siang harian dengan diskon 10%</li>
+<li>Tujuan: jaminan penjualan harian yang predictable</li>
+</ul>
+
+<ol>
+<li><strong>Optimasi bahan baku</strong></li>
+</ol>
+<ul>
+<li>Cari supplier alternatif yang lebih murah</li>
+<li>Beli dalam quantity lebih besar untuk harga grosir</li>
+</ul>
+
+<hr/>
+
+<h4>HASIL SETELAH 3 BULAN:</h4>
+
+<table><thead><tr>
+<th>Metrik</th>
+<th>Sebelum</th>
+<th>Sesudah</th>
+<th>Perubahan</th>
+</tr></thead><tbody>
+<tr>
+<td>Omzet</td>
+<td>Rp 20 juta</td>
+<td>Rp 28 juta</td>
+<td>+40%</td>
+</tr>
+<tr>
+<td>Gross margin</td>
+<td>38%</td>
+<td>52%</td>
+<td>+37%</td>
+</tr>
+<tr>
+<td>Net margin</td>
+<td>3%</td>
+<td>12%</td>
+<td>+300%</td>
+</tr>
+<tr>
+<td>Porsi/hari</td>
+<td>25-30</td>
+<td>35-40</td>
+<td>+33%</td>
+</tr>
+<tr>
+<td>Waste rate</td>
+<td>8%</td>
+<td>3%</td>
+<td>-63%</td>
+</tr>
+<tr>
+<td>Cash reserve</td>
+<td>1 bulan</td>
+<td>3 bulan</td>
+<td>+200%</td>
+</tr>
+
+<hr/>
+
+<h2>BAB 5: COMMON MISTAKES</h2>
+<h3>5 Kesalahan Fatal dalam Diagnosis Bisnis</h3>
+
+<hr/>
+
+<h3>❌ Kesalahan #1: Fokus Hanya pada Omzet</h3>
+
+</tbody></table>
+<p><strong>Yang terjadi:</strong> Entrepreneur hanya melihat angka penjualan. "Omzet bulan ini Rp 50 juta, bagus!" Tapi tidak tahu profit, cash flow, atau retention.</p>
+
+<p><strong>Cara menghindari:</strong> Selalu lihat omzet BERSAMAAN dengan profit margin dan cash flow. Omzet tinggi + margin rendah = bisnis yang bekerja untuk orang lain.</p>
+
+<hr/>
+
+<h3>❌ Kesalahan #2: Mengabaikan Data Kualitatif</h3>
+
+<p><strong>Yang terjadi:</strong> Entrepreneur hanya melihat angka. Tapi angka tidak bercerita semuanya. Mengapa pelanggan pergi? Mengapa karyawan tidak termotivasi? Ini butuh data kualitatif — wawancara, observasi, feedback.</p>
+
+<p><strong>Cara menghindari:</strong> Untuk setiap angka yang "merah," lakukan investigasi kualitatif. Tanya pelanggan. Tanya karyawan. Observasi langsung.</p>
+
+<hr/>
+
+<h3>❌ Kesalahan #3: Diagnosis Tanpa Follow-up</h3>
+
+<p><strong>Yang terjadi:</strong> Entrepreneur melakukan checkup, dapat diagnosis, merasa "oh saya sudah tahu kondisi bisnis saya" — lalu tidak melakukan apa-apa. Checkup tanpa tindakan = buang waktu.</p>
+
+<p><strong>Cara menghindari:</strong> Setiap checkup HARUS menghasilkan prescription (resep) dengan prioritas, timeline, dan orang yang bertanggung jawab.</p>
+
+<hr/>
+
+<h3>❌ Kesalahan #4: Melakukan Checkup Saat Sudah Krisis</h3>
+
+<p><strong>Yang terjadi:</strong> Entrepreneur baru melakukan diagnosis bisnis saat sudah hampir bangkrut. Sudah terlambat. Banyak kerusakan yang tidak bisa diperbaiki.</p>
+
+<p><strong>Cara menghindari:</strong> Jadikan checkup sebagai RUTIN — bukan saat krisis. Idealnya bulanan atau quarterly. Pencegahan > pengobatan.</p>
+
+<hr/>
+
+<h3>❌ Kesalahan #5: Tidak Jujur dengan Diri Sendiri</h3>
+
+<p><strong>Yang terjadi:</strong> Entrepreneur "mempercantik" data saat checkup. "Sebenarnya margin saya tidak segitu." "Sebenarnya cash flow saya tidak seburuk itu." Self-deception adalah musuh terbesar diagnosis.</p>
+
+<p><strong>Cara menghindari:</strong> Gunakan data AKTUAL, bukan data yang "diharapkan." Jika memungkinkan, minta orang lain (partner, akuntan, konsultan) untuk memverifikasi data Anda.</p>
+
+<hr/>
+
+<h3>❌ Kesalahan #6: Terlalu Banyak Fokus pada Satu Titik Vital</h3>
+
+<p><strong>Yang terjadi:</strong> Entrepreneur menemukan satu masalah (misalnya inventory) dan fokus 100% di situ, mengabaikan 6 titik vital lainnya. Hasilnya: satu area membaik, area lain memburuk.</p>
+
+<p><strong>Cara menghindari:</strong> Selalu lihat 7 titik vital secara HOLISTIK. Prioritaskan 2-3 area yang paling kritis, tapi tetap pantau semua.</p>
+
+<hr/>
+
+<h3>❌ Kesalahan #7: Tidak Membandingkan dengan Standar Industri</h3>
+
+<p><strong>Yang terjadi:</strong> Entrepreneur merasa "margin 5% sudah bagus" karena tidak tahu standar industri. Padahal, untuk industri mereka, 5% sangat rendah.</p>
+
+<p><strong>Cara menahindari:</strong> Selalu bandingkan metrik Anda dengan rata-rata industri. Gunakan scoring system yang sudah distandarisasi (seperti yang kami berikan di Bab 3).</p>
+
+<hr/>
+
+<h2>BAB 6: ADVANCED TIPS</h2>
+<h3>Scanner Level Lanjutan</h3>
+
+<hr/>
+
+<h3>🔮 Tip #1: "The Trend Scan"</h3>
+
+<p>Jangan hanya lihat angka saat ini. Lihat TREND — arah pergerakan dalam 3-6 bulan terakhir.</p>
+
+<ul>
+<li>Cash flow yang turun 5% setiap bulan = bahaya, meskipun masih positif</li>
+<li>Retention yang naik 2% setiap bulan = sehat, meskipun masih di bawah rata-rata</li>
+</ul>
+
+<p><strong>Trend lebih penting dari snapshot.</strong></p>
+
+<hr/>
+
+<h3>🔮 Tip #2: "The Correlation Analysis"</h3>
+
+<p>Cari korelasi antar titik vital:</p>
+
+<ul>
+<li>Apakah penurunan retention berkorelasi dengan penurunan margin? (Mungkin Anda terlalu agresif diskon untuk dapat pelanggan)</li>
+<li>Apakah peningkatan CAC berkorelasi dengan penurunan conversion? (Mungkin iklan Anda tidak relevan)</li>
+<li>Apakah peningkatan waste rate berkorelasi dengan penurunan omzet? (Mungkin Anda over-prepare karena takut kehabisan)</li>
+</ul>
+
+<p>Korelasi membantu Anda menemukan AKAR masalah, bukan gejala.</p>
+
+<hr/>
+
+<h3>🔮 Tip #3: "The Benchmarking Database"</h3>
+
+<p>Buat database benchmark untuk industri Anda. Kumpulkan data dari:</p>
+<ul>
+<li>Laporan keuangan publik (untuk perusahaan besar)</li>
+<li>Asosiasi industri</li>
+<li>Komunitas entrepreneur</li>
+<li>Data pemerintah (BPS, Kemenperin)</li>
+</ul>
+
+<p>Gunakan database ini sebagai pembanding setiap kali Anda melakukan checkup.</p>
+
+<hr/>
+
+<h3>🔮 Tip #4: "The Predictive Checkup"</h3>
+
+<p>Setelah beberapa kali checkup, Anda akan punya data historis. Gunakan data ini untuk PREDIKSI:</p>
+
+<ul>
+<li>"Jika waste rate terus naik 2% per bulan, dalam 3 bulan saya akan rugi Rp X"</li>
+<li>"Jika retention terus turun, dalam 6 bulan saya perlu spend Y untuk dapat pelanggan baru yang sama"</li>
+</ul>
+
+<p>Prediksi membantu Anda bertindak SEBELUM masalah menjadi krisis.</p>
+
+<hr/>
+
+<h3>🔮 Tip #5: "The Team Checkup"</h3>
+
+<p>Libatkan tim Anda dalam checkup. Setiap orang punya perspektif berbeda:</p>
+
+<ul>
+<li><strong>Kasir:</strong> tahu perilaku pembelian pelanggan</li>
+<li><strong>Karyawan gudang:</strong> tahu masalah stok</li>
+<li><strong>Admin sosmed:</strong> tahu feedback online</li>
+<li><strong>Driver/supir:</strong> tahu kondisi lapangan</li>
+</ul>
+
+<p>Buat sesi "checkup meeting" bulanan di mana setiap anggota tim berbagi observasi mereka.</p>
+
+<hr/>
+
+<h3>🔮 Tip #6: "The Customer Checkup"</h3>
+
+<p>Tidak hanya bisnis Anda yang perlu checkup — pelanggan Anda juga. Lakukan "customer checkup" dengan menanyakan:</p>
+
+<ul>
+<li>"Apa yang paling Anda suka dari kami?"</li>
+<li>"Apa yang paling ingin Anda perbaiki?"</li>
+<li>"Apa yang membuat Anda memilih kami dibanding kompetitor?"</li>
+<li>"Apa yang akan membuat Anda berhenti belanja di sini?"</li>
+</ul>
+
+<p>Ini adalah "checkup dari sisi pasien" — dan sering kali mengungkap hal-hal yang tidak terlihat dari data internal.</p>
+
+<hr/>
+
+<h3>🔮 Tip #7: "The Financial Health Scorecard"</h3>
+
+<p>Setelah beberapa kali checkup, buat "scorecard" — satu halaman ringkasan yang menampilkan skor semua 7 titik vital dari waktu ke waktu. Ini memberi Anda VISUAL tentang kesehatan bisnis Anda.</p>
+
+<p>Contoh format:</p>
+
+<pre><code>
+FINANCIAL HEALTH SCORECARD — GLOW SKINCARE
+============================================
+         | Jan | Feb | Mar | Apr | Mei | Jun
+---------|-----|-----|-----|-----|-----|-----
+Cash Flow|  🟡 |  🟡 |  🟢 |  🟢 |  🟢 |  🟢
+Margin   |  🔴 |  🔴 |  🟡 |  🟡 |  🟢 |  🟢
+Retention|  🔴 |  🔴 |  🟡 |  🟡 |  🟡 |  🟢
+Inventory|  🔴 |  🔴 |  🔴 |  🟡 |  🟡 |  🟢
+CAC      |  🟡 |  🟡 |  🟡 |  🟢 |  🟢 |  🟢
+Growth   |  🔴 |  🔴 |  🟡 |  🟡 |  🟢 |  🟢
+Ops Eff. |  🔴 |  🔴 |  🟡 |  🟡 |  🟡 |  🟢
+---------|-----|-----|-----|-----|-----|-----
+OVERALL  | 🔴 | 🔴 | 🟡 | 🟡 | 🟢 | 🟢 |
+</code></pre>
+
+<p>Visual ini sangat powerful untuk tracking progress dan memotivasi tim.</p>
+
+<hr/>
+
+<h3>🔮 Tip #8: "The Industry Pulse Check"</h3>
+
+<p>Selain checkup internal, lakukan "pulse check" industri:</p>
+
+<ul>
+<li>Apa tren terbaru di industri Anda?</li>
+<li>Apa yang dilakukan kompetitor besar?</li>
+<li>Apa regulasi baru yang mungkin mempengaruhi bisnis Anda?</li>
+<li>Apa perubahan perilaku konsumen?</li>
+</ul>
+
+<p>Ini adalah "checkup eksternal" yang melengkapi checkup internal.</p>
+
+<hr/>
+
+<h2>BAB 7: ACTION PLAN</h2>
+<h3>Template Checkup yang Bisa Langsung Anda Isi</h3>
+
+<hr/>
+
+<h3>📋 BODY CHECKUP SCAN — TEMPLATE LENGKAP</h3>
+
+<p><strong>Nama Bisnis:</strong> ___________________________</p>
+<p><strong>Industri:</strong> ___________________________</p>
+<p><strong>Periode Checkup:</strong> ___________________________</p>
+<p><strong>Dilakukan oleh:</strong> ___________________________</p>
+
+<hr/>
+
+<h4>TITIK VITAL #1: CASH FLOW</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Data</th>
+<th>Skor (🟢/🟡/🔴)</th>
+<th>Catatan</th>
+</tr></thead><tbody>
+<tr>
+<td>Cash flow 3 bulan</td>
+<td>Rp _______</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cash reserve</td>
+<td>_______ bulan</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Piutang vs. Hutang</td>
+<td>Piutang: Rp ____ Hutang: Rp ____</td>
+<td></td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Skor Keseluruhan Cash Flow:</strong> 🟢 / 🟡 / 🔴</p>
+
+<p><strong>Tindakan yang diperlukan:</strong></p>
+<p>___________________________________</p>
+<p>___________________________________</p>
+
+<hr/>
+
+<h4>TITIK VITAL #2: PROFIT MARGIN</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Data</th>
+<th>Skor (🟢/🟡/🔴)</th>
+<th>Catatan</th>
+</tr></thead><tbody>
+<tr>
+<td>Gross margin</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Net margin</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tren margin</td>
+<td>Naik / Stabil / Turun</td>
+<td></td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Skor Keseluruhan Profit Margin:</strong> 🟢 / 🟡 / 🔴</p>
+
+<p><strong>Tindakan yang diperlukan:</strong></p>
+<p>___________________________________</p>
+<p>___________________________________</p>
+
+<hr/>
+
+<h4>TITIK VITAL #3: CUSTOMER RETENTION</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Data</th>
+<th>Skor (🟢/🟡/🔴)</th>
+<th>Catatan</th>
+</tr></thead><tbody>
+<tr>
+<td>Repeat purchase rate</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CLV</td>
+<td>Rp _______</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Churn rate</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NPS</td>
+<td>_______</td>
+<td></td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Skor Keseluruhan Customer Retention:</strong> 🟢 / 🟡 / 🔴</p>
+
+<p><strong>Tindakan yang diperlukan:</strong></p>
+<p>___________________________________</p>
+<p>___________________________________</p>
+
+<hr/>
+
+<h4>TITIK VITAL #4: INVENTORY TURNOVER</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Data</th>
+<th>Skor (🟢/🟡/🔴)</th>
+<th>Catatan</th>
+</tr></thead><tbody>
+<tr>
+<td>Turnover ratio</td>
+<td>_______x/tahun</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Dead stock</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Stockout frequency</td>
+<td>_______x/bulan</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Stok ratio</td>
+<td>_______ bulan</td>
+<td></td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Skor Keseluruhan Inventory Turnover:</strong> 🟢 / 🟡 / 🔴</p>
+
+<p><strong>Tindakan yang diperlukan:</strong></p>
+<p>___________________________________</p>
+<p>___________________________________</p>
+
+<hr/>
+
+<h4>TITIK VITAL #5: CAC</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Data</th>
+<th>Skor (🟢/🟡/🔴)</th>
+<th>Catatan</th>
+</tr></thead><tbody>
+<tr>
+<td>CAC</td>
+<td>Rp _______</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CAC vs. CLV ratio</td>
+<td>_______:1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Best channel</td>
+<td>_______</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Conversion rate</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Skor Keseluruhan CAC:</strong> 🟢 / 🟡 / 🔴</p>
+
+<p><strong>Tindakan yang diperlukan:</strong></p>
+<p>___________________________________</p>
+<p>___________________________________</p>
+
+<hr/>
+
+<h4>TITIK VITAL #6: REVENUE GROWTH</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Data</th>
+<th>Skor (🟢/🟡/🔴)</th>
+<th>Catatan</th>
+</tr></thead><tbody>
+<tr>
+<td>MoM growth</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>YoY growth</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Diversifikasi</td>
+<td>Sumber terbesar: _______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Revenue per customer</td>
+<td>Rp _______</td>
+<td></td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Skor Keseluruhan Revenue Growth:</strong> 🟢 / 🟡 / 🔴</p>
+
+<p><strong>Tindakan yang diperlukan:</strong></p>
+<p>___________________________________</p>
+<p>___________________________________</p>
+
+<hr/>
+
+<h4>TITIK VITAL #7: OPERATIONAL EFFICIENCY</h4>
+
+<table><thead><tr>
+<th>Indikator</th>
+<th>Data</th>
+<th>Skor (🟢/🟡/🔴)</th>
+<th>Catatan</th>
+</tr></thead><tbody>
+<tr>
+<td>Labor productivity</td>
+<td>Rp _______/karyawan</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cost per transaction</td>
+<td>Rp _______</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Waste rate</td>
+<td>_______%</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bottlenecks</td>
+<td>_______</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Technology</td>
+<td>_______</td>
+<td></td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Skor Keseluruhan Operational Efficiency:</strong> 🟢 / 🟡 / 🔴</p>
+
+<p><strong>Tindakan yang diperlukan:</strong></p>
+<p>___________________________________</p>
+<p>___________________________________</p>
+
+<hr/>
+
+<h4>RINGKASAN KESELURUHAN</h4>
+
+<table><thead><tr>
+<th>#</th>
+<th>Titik Vital</th>
+<th>Skor</th>
+<th>Prioritas</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>Cash Flow</td>
+<td>🟢/🟡/🔴</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Profit Margin</td>
+<td>🟢/🟡/🔴</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Customer Retention</td>
+<td>🟢/🟡/🔴</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Inventory Turnover</td>
+<td>🟢/🟡/🔴</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>CAC</td>
+<td>🟢/🟡/🔴</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Revenue Growth</td>
+<td>🟢/🟡/🔴</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Operational Efficiency</td>
+<td>🟢/🟡/🔴</td>
+<td></td>
+</tr>
+
+</tbody></table>
+<p><strong>Jumlah 🟢:</strong> _____ | <strong>Jumlah 🟡:</strong> _____ | <strong>Jumlah 🔴:</strong> _____</p>
+
+<p><strong>Diagnosis Keseluruhan:</strong></p>
+<ul>
+<li>Jika 🔴 > 3: <strong>KRISIS</strong> — butuh tindakan segera di semua area merah</li>
+<li>Jika 🔴 1-2: <strong>WASPADA</strong> — fokuskan perbaikan di area merah</li>
+<li>Jika 🔴 0: <strong>SEHAT</strong> — pertahankan dan optimalkan area kuning</li>
+</ul>
+
+<hr/>
+
+<h4>PRESCRIPTION (Rencana Perbaikan)</h4>
+
+<p><strong>Prioritas 1 — Tindakan dalam 7 hari:</strong></p>
+<ol>
+<li>___________________________________</li>
+<li>___________________________________</li>
+</ol>
+
+<p><strong>Prioritas 2 — Tindakan dalam 30 hari:</strong></p>
+<ol>
+<li>___________________________________</li>
+<li>___________________________________</li>
+<li>___________________________________</li>
+</ol>
+
+<p><strong>Prioritas 3 — Tindakan dalam 90 hari:</strong></p>
+<ol>
+<li>___________________________________</li>
+<li>___________________________________</li>
+<li>___________________________________</li>
+</ol>
+
+<hr/>
+
+<h4>CHECKUP SELANJUTNYA</h4>
+
+<p><strong>Tanggal checkup berikutnya:</strong> _______________</p>
+
+<p><strong>Yang akan di-track dari checkup sebelumnya:</strong></p>
+<ol>
+<li>___________________________________</li>
+<li>___________________________________</li>
+<li>___________________________________</li>
+</ol>
+
+<hr/>
+
+<h2>PENUTUP</h2>
+<h3>Dari Pasien jadi Dokter Bisnis Anda Sendiri</h3>
+
+<hr/>
+
+<p>Anda sudah sampai di akhir ebook ini. Selamat — Anda sekarang punya alat yang dimiliki oleh sedikit entrepreneur: <strong>kemampuan untuk mendiagnosis bisnis Anda sendiri.</strong></p>
+
+<p>Kebanyakan entrepreneur menjalankan bisnis seperti mengendarai mobil tanpa dashboard. Mereka tidak tahu kecepatan, bahan bakar, suhu mesin, atau tekanan oli. Mereka hanya tahu "mobil masih jalan." Sampai suatu hari, mesin mati di tengah jalan.</p>
+
+<p>Anda sekarang punya dashboard. Anda punya 7 gauge yang menunjukkan kesehatan bisnis Anda. Anda punya cara untuk membaca setiap gauge, memberi skor, dan — yang paling penting — meresepkan perbaikan.</p>
+
+<h3>3 Prinsip yang Harus Anda Ingat:</h3>
+
+<p><strong>1. Rutinitas adalah kunci.</strong></p>
+
+<p>Checkup sekali tidak cukup. Checkup yang powerful adalah checkup yang dilakukan RUTIN — bulanan atau quarterly. Dari checkup rutin, Anda akan melihat TREND, dan trend adalah prediktor terbaik untuk masa depan bisnis Anda.</p>
+
+<p><strong>2. Jangan menunda pengobatan.</strong></p>
+
+<p>Jika Anda menemukan area MERAH, jangan tunggu. Tindakan dalam 7 hari pertama seringkali menentukan apakah masalah bisa diatasi atau menjadi krisis.</p>
+
+<p><strong>3. Libatkan tim Anda.</strong></p>
+
+<p>Checkup bisnis bukan hanya tugas owner. Libatkan tim Anda. Beri mereka akses ke data. Ajari mereka cara membaca gauge. Ketika seluruh tim memahami kesehatan bisnis, seluruh tim akan bekerja untuk memperbaikinya.</p>
+
+<h3>Langkah Selanjutnya:</h3>
+
+<ol>
+<li>✍️ <strong>Hari ini:</strong> Lakukan Body Checkup Scan pertama Anda menggunakan template di Bab 7</li>
+<li>📊 <strong>Minggu ini:</strong> Identifikasi 2-3 area paling kritis dan mulai tindakan perbaikan</li>
+<li>📅 <strong>Bulan depan:</strong> Lakukan checkup ulang dan bandingkan hasilnya</li>
+</ol>
+
+<blockquote>
+<p><em>"Bisnis yang sehat bukan bisnis yang tidak pernah sakit. Bisnis yang sehat adalah bisnis yang cepat menyadari sakitnya dan cepat mengobatinya."</em></p>
+<p>— <strong>Imam</strong></p>
+</blockquote>
+
+<hr/>
+
+<h3>🚀 Ingin Lebih Lanjut?</h3>
+
+<p>Metode Body Checkup Scan adalah <strong>Metode 4</strong> dari seri <strong>The Imam Method.</strong></p>
+
+<p>Metode-metode lain dalam seri ini:</p>
+<ol>
+<li>✅ Metode 1: [Nama Metode 1]</li>
+<li>✅ Metode 2: [Nama Metode 2]</li>
+<li>✅ Metode 3: Reverse Engineer Observation</li>
+<li>✅ <strong>Metode 4: Body Checkup Scan</strong> ← Anda di sini</li>
+<li>⬜ Metode 5: [Nama Metode 5]</li>
+</ol>
+
+<p>Dapatkan seri lengkapnya dan jadi entrepreneur yang punya <strong>sistem bisnis lengkap</strong> — bukan sekadar ide bagus.</p>
+
+<p><strong>[KLIK DI SINI untuk mendapatkan seri lengkap The Imam Method →]</strong></p>
+
+<hr/>
+
+<h2>RESOURCES</h2>
+<h3>Tools, Bacaan, dan Link Berguna</h3>
+
+<hr/>
+
+<h3>🔧 Tools Gratis untuk Body Checkup:</h3>
+
+<table><thead><tr>
+<th>Tool</th>
+<th>Fungsi</th>
+<th>Link</th>
+</tr></thead><tbody>
+<tr>
+<td>Google Sheets</td>
+<td>Template checkup & tracking</td>
+<td>sheets.google.com</td>
+</tr>
+<tr>
+<td>Wave Accounting</td>
+<td>Akuntansi gratis</td>
+<td>waveapps.com</td>
+</tr>
+<tr>
+<td>Canva</td>
+<td>Visualisasi scorecard</td>
+<td>canva.com</td>
+</tr>
+<tr>
+<td>Notion</td>
+<td>Dokumentasi checkup</td>
+<td>notion.so</td>
+</tr>
+<tr>
+<td>Google Forms</td>
+<td>Survei NPS pelanggan</td>
+<td>forms.google.com</td>
+</tr>
+<tr>
+<td>Majoo</td>
+<td>POS & inventory system</td>
+<td>majoo.id</td>
+</tr>
+<tr>
+<td>Ol Kasir</td>
+<td>Kasir digital gratis</td>
+<td>olasir.id</td>
+</tr>
+
+<h3>📚 Bacaan Lanjutan:</h3>
+
+<tr>
+<td>Judul</td>
+<td>Penulis</td>
+<td>Relevansi</td>
+</tr>
+<tr>
+<td><em>Financial Intelligence</em></td>
+<td>Karen Berman</td>
+<td>Membaca laporan keuangan untuk non-keuangan</td>
+</tr>
+<tr>
+<td><em>The Lean Startup</em></td>
+<td>Eric Ries</td>
+<td>Metode validasi & iterasi bisnis</td>
+</tr>
+<tr>
+<td><em>Measure What Matters</em></td>
+<td>John Doerr</td>
+<td>OKR framework untuk tracking</td>
+</tr>
+<tr>
+<td><em>The E-Myth Revisited</em></td>
+<td>Michael Gerber</td>
+<td>Sistemasi operasional bisnis</td>
+</tr>
+<tr>
+<td><em>Profit First</em></td>
+<td>Mike Michalowicz</td>
+<td>Manajemen cash flow</td>
+</tr>
+<tr>
+<td><em>Traction</em></td>
+<td>Gino Wickman</td>
+<td>EOS framework untuk bisnis</td>
+</tr>
+<tr>
+<td><em>Good to Great</em></td>
+<td>Jim Collins</td>
+<td>Dari bisnis baik jadi hebat</td>
+</tr>
+
+<h3>📱 Template & Worksheet:</h3>
+
+</tbody></table>
+<ul>
+<li><strong>Body Checkup Scan Template (PDF)</strong> → [Download]</li>
+<li><strong>Financial Health Scorecard (Excel)</strong> → [Download]</li>
+<li><strong>Customer Retention Tracker</strong> → [Download]</li>
+<li><strong>Inventory Turnover Calculator</strong> → [Download]</li>
+<li><strong>CAC & CLV Calculator</strong> → [Download]</li>
+<li><strong>Prescription Worksheet</strong> → [Download]</li>
+</ul>
+
+<h3>🤝 Komunitas:</h3>
+
+<ul>
+<li><strong>Grup Telegram The Imam Method</strong> → [Join]</li>
+<li><strong>Instagram @imammethod</strong> → [Follow]</li>
+<li><strong>YouTube Imam's Business Method</strong> → [Subscribe]</li>
+</ul>
+
+<hr/>
+
+<blockquote>
+<p><em>"Orang bijak tidak menunggu badai datang untuk memperkuat rumahnya. Dia memperkuat rumahnya SEBELUM badai datang. Body Checkup Scan adalah cara Anda memperkuat bisnis — sebelum badai datang."</em></p>
+<p>— <strong>Imam</strong></p>
+</blockquote>
+
+<hr/>
+
+<p><strong>© 2026 Imam's Business Method. All rights reserved.</strong></p>
+
+<p><em>Ebook ini bagian dari seri The Imam Method. Dilarang memperbanyak tanpa izin.</em></p>
+
+</article>
+<footer style="margin-top: 3em; padding: 1.5em; text-align: center; color: var(--text-light); border-top: 1px solid var(--border);"><p>© 2026 Imam Business Hacking Methods</p></footer>
+</body>
+</html>

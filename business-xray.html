@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business X-Ray - Lihat Bisnis dari Dalam</title>
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1 { font-size: 2.2em; color: var(--primary); margin: 1.5em 0 0.5em; border-bottom: 3px solid var(--primary); padding-bottom: 0.3em; }
+h2 { font-size: 1.6em; color: var(--primary-dark); margin: 1.5em 0 0.5em; border-bottom: 1px solid var(--border); padding-bottom: 0.2em; }
+h3 { font-size: 1.3em; color: #334155; margin: 1.2em 0 0.4em; }
+h4 { font-size: 1.1em; color: #475569; margin: 1em 0 0.3em; }
+p { margin: 0.8em 0; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 0.8em 1.2em;
+  margin: 1.2em 0;
+  background: #fffbeb;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+code {
+  background: #f1f5f9;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'Fira Code', monospace;
+}
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1.2em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+pre code { background: none; color: inherit; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+th, td {
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+th { background: var(--primary); color: white; }
+tr:nth-child(even) { background: #f8fafc; }
+ul, ol { margin: 0.8em 0; padding-left: 2em; }
+li { margin: 0.4em 0; }
+hr { border: none; border-top: 2px solid var(--border); margin: 2em 0; }
+strong { color: #1e293b; }
+@media (max-width: 600px) {
+  body { padding: 12px; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.3em; }
+}
+</style>
+</head>
+<body>
+<nav style="margin-bottom: 2em; padding: 1em; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"><a href="index.html">← Kembali ke Index</a></nav>
+<article>
+<h1>🎯 EBOOK: BUSINESS X-RAY</h1>
+
+<h2>5 Pertanyaan Brutal untuk Diagnosis Bisnis yang Jujur</h2>
+
+<hr/>
+
+<p><strong>Dibuat oleh: Imam — Creator of 10 Business Hacking Methods</strong></p>
+<p><strong>Hak Cipta © 2026</strong></p>
+
+<hr/>
+
+<h3>Tentang Penulis</h3>
+
+<p>Saya Imam. COO, CMO, Director — dan yang paling penting: <strong>orang yang pernah gagal.</strong></p>
+
+<p>Gagal handle project 20 juta. Gagal nge-hire orang yang salah. Gagal ngerasa bahwa saya terlalu dekat dengan bisnis saya untuk melihat masalahnya.</p>
+
+<p>Yang terakhir itu adalah pelajaran paling mahal. Karena kalau kamu terlalu dekat, kamu nggak bisa melihat objektif. Kamu mulai <strong>menyangkal.</strong></p>
+
+<p>Saya belajar bahwa <strong>pemilik bisnis butuh X-Ray</strong> — cara untuk melihat bisnis dari jarak jauh, dengan objektif dan jujur.</p>
+
+<p>Itulah yang saya tulis dalam ebook ini.</p>
+
+<hr/>
+
+<h3>Daftar Isi</h3>
+
+<ol>
+<li>[Pengantar: Kamu Butuh X-Ray](#bab-1)</li>
+<li>[MINDSET: Clarity > Comfort](#bab-2)</li>
+<li>[5 PERTANYAAN X-RAY](#bab-3)</li>
+<li>[CARA JAWAB DENGAN JUJUR](#bab-4)</li>
+<li>[CASE STUDY: Muslim Fashion Stagnan 2 Tahun](#bab-5)</li>
+<li>[COMMON MISTAKES](#bab-6)</li>
+<li>[ADVANCED TIPS](#bab-7)</li>
+<li>[ACTION PLAN](#bab-8)</li>
+<li>[Penutup](#penutup)</li>
+</ol>
+
+<hr/>
+
+<p><a name="bab-1"></a></p>
+<h2>BAB 1: Pengantar — Kamu Butuh X-Ray</h2>
+
+<h3>Kenapa Kamu Baca Ebook Ini?</h3>
+
+<p>Saya mau tanya satu hal:</p>
+
+<p><strong>Kapan terakhir kali kamu benar-benar jujur tentang kondisi bisnis kamu?</strong></p>
+
+<p>Bukan jujur ke tim. Bukan jujur ke investor. Bukan jujur ke mentor. <strong>Jujur ke diri sendiri.</strong></p>
+
+<p>Kebanyakan pemilik bisnis nggak pernah melakukan itu. Bukan karena mereka berbohong — tapi karena mereka <strong>terlalu dekat</strong> untuk melihat.</p>
+
+<p>Ini yang disebut <strong>Founder's Blind Spot</strong> — area yang nggak bisa dilihat oleh founder karena dia terlalu dalam di dalamnya.</p>
+
+<p><strong>Business X-Ray</strong> adalah alat untuk melihat blind spot tersebut.</p>
+
+<h3>Siapa yang Butuh Ebook Ini?</h3>
+
+<p>✅ Owner bisnis yang merasa "ada yang salah" tapi nggak tau apa</p>
+<p>✅ Founder yang udah jalan 1-3 tahun tapi growth-nya stagnan</p>
+<p>✅ Entrepreneur yang sering dapet feedback dari mentor tapi nggak bisa "lihat" sendiri</p>
+<p>✅ Siapa pun yang mau objektivitas dalam evaluasi bisnis</p>
+
+<hr/>
+
+<p><a name="bab-2"></a></p>
+<h2>BAB 2: MINDSET — Clarity > Comfort</h2>
+
+<h3>Kenapa "Jujur" Itu Susah?</h3>
+
+<p>Karena pengalaman saya sendiri — dan ngambil dari pengalaman klien:</p>
+
+<p><strong>Awareness tanpa action = anxiety.</strong></p>
+
+<p>Sadar ada masalah tanpa bikin perubahan = cuma bikin khawatir.</p>
+
+<p>Awareness dengan action = <strong>progress.</strong></p>
+
+<p>Business X-Ray didesain untuk memindahkan kamu dari <strong>comfort zone</strong> (karena nggak sadar) ke <strong>awareness</strong> (karena akhirnya sadar) ke <strong>action</strong> (karena tau harus ngapain).</p>
+
+<h3>Mindset Sebelum Mulai</h3>
+
+<ol>
+<li><strong>"Saya bukan bisnis saya."</strong> → Pisahkan identitas pribadi dari bisnis. Bisnis yang bukan saya = bisa dievaluasi objektif.</li>
+</ol>
+
+<ol>
+<li><strong>"Fakta netral."</strong> → Fakta nggak baik dan nggak buruk. Fakta cuma fakta.</li>
+</ol>
+
+<ol>
+<li><strong>"Saya cuma data collector."</strong> → Bayangkan kamu peneliti yang sedang mengumpulkan data.</li>
+</ol>
+
+<ol>
+<li><strong>"Apa yang dikatakan customer > apa yang saya percaya."</strong> → Customer adalah sumber data paling jujur.</li>
+</ol>
+
+<hr/>
+
+<p><a name="bab-3"></a></p>
+<h2>BAB 3: 5 PERTANYAAN X-RAY</h2>
+
+<h3>PERTANYAAN #1: "Kalau bisnis kamu tutup besok, siapa yang paling kecewa — dan kenapa?"</h3>
+
+<p><strong>Ini menguji apakah kamu punya Product-Market Fit.</strong></p>
+
+<p>Kalau bisnis kamu tutup — dan nggak ada yang kecewa:</p>
+<ul>
+<li>Kamu nggak cukup penting bagi siapa pun</li>
+<li>Masalah yang kamu solve nggak cukup berarti</li>
+<li>Kamu bisa diganti dengan mudah</li>
+</ul>
+
+<p><strong>Variasi pertanyaan:</strong></p>
+<ul>
+<li>"Pelanggan mana yang paling kecewa?"</li>
+<li>"Mereka kecewa karena kehilangan apa?"</li>
+<li>"Kalau mereka kecewa, kenapa nggak cari alternatif?"</li>
+</ul>
+
+<p><strong>Siapa yang Harus Ditanya:</strong></p>
+<ol>
+<li>5 pelanggan terbaik — "Kalau kami tutup, kamu kehilangan apa?"</li>
+<li>5 pelanggan yang sudah pergi — "Kenapa pergi? Kalau kami balik, kamu balik?"</li>
+<li>5 orang yang nggak pernah beli — "Kalau kami tutup, kamu kecewa nggak?"</li>
+</ol>
+
+<table><thead><tr>
+<th>Jawaban</th>
+<th>Interpretasi</th>
+</tr></thead><tbody>
+<tr>
+<td>"Nggak ada yang kecewa"</td>
+<td>🔴 Tidak ada Product-Market Fit</td>
+</tr>
+<tr>
+<td>"Mungkin 5-10 orang"</td>
+<td>🟡 PMF lemah</td>
+</tr>
+<tr>
+<td>"Banyak, karena [spesifik]"</td>
+<td>🟢 PMF kuat</td>
+</tr>
+
+<hr/>
+
+<h3>PERTANYAAN #2: "Kalau harus jelaskan bisnis kamu dalam 1 kalimat ke anak 10 tahun, gimana?"</h3>
+
+</tbody></table>
+<p><strong>Uji Clarity Tertinggi.</strong></p>
+
+<p>Kalau nggak bisa jelaskan dalam 1 kalimat sederhana — <strong>positioning-mu blur.</strong></p>
+
+<p><strong>Contoh jawaban yang JELAS:</strong></p>
+<ul>
+<li>"Kami jual baju Muslim yang nyaman dipakai kerja dan harga terjangkau."</li>
+<li>"Kami bantu ibu-ibu buat skincare routine yang halal dan simpel."</li>
+</ul>
+
+<p><strong>Contoh jawaban yang BLUR:</strong></p>
+<ul>
+<li>"Kami adalah platform digital yang mengintegrasikan kebutuhan..."</li>
+<li>"Kami menyediakan solusi komprehensif untuk..."</li>
+</ul>
+
+<p><strong>Tiga yang terakhir = nggak jelas sama sekali.</strong></p>
+
+<h3>Test: Tanya 5 orang dari tim kamu</h3>
+
+<p>Kalau 5 orang tim jelaskan bisnis dengan kata-kata mereka sendiri — apakah <strong>konsisten?</strong></p>
+
+<p>Kalau beda-beda = positioning nggak clear.</p>
+
+<h3>Formula 1 Kalimat</h3>
+
+<pre><code>
+"Kami [verb] [target customer] untuk [hasil/manfaat] 
+dengan [mekanisme/approach unik]."
+</code></pre>
+
+<p>Contoh: <em>"Kami bantu Muslim designer launch brand dalam 30 hari dengan step-by-step system."</em></p>
+
+<hr/>
+
+<h3>PERTANYAAN #3: "Apa yang kamu lakukan setiap hari tapi ternyata nggak ngefek apa-apa?"</h3>
+
+<p><strong>Ini pertanyaan yang paling bikin uncomfortable.</strong></p>
+
+<p>Karena banyak owner bisnis (termasuk saya dulu) yang:</p>
+<ul>
+<li>Sibuk meeting 6 jam sehari → tapi nggak ada keputusan</li>
+<li>Bikin report setiap minggu → tapi nggak pernah dibaca</li>
+<li>Nge-check email 50x sehari → tapi nggak ada yang berubah</li>
+</ul>
+
+<p><strong>Aktivitas palsu = yang menguras waktu dan energi tapi nggak menghasilkan apapun.</strong></p>
+
+<h3>Cara Identifikasi:</h3>
+
+<ol>
+<li>List semua aktivitas harian</li>
+<li>Untuk masing-masing, tanya: "Kalau saya STOP melakukan ini, apa yang berubah?"</li>
+<li>Kalau "nggak ada" → aktivitas palsu</li>
+</ol>
+
+<h3>Template Audit Aktivitas:</h3>
+
+<table><thead><tr>
+<th>Aktivitas</th>
+<th>Waktu/hari</th>
+<th>Output?</th>
+<th>Kalau distop?</th>
+<th>Status</th>
+</tr></thead><tbody>
+<tr>
+<td>Meeting</td>
+<td>2 jam</td>
+<td>???</td>
+<td>???</td>
+<td>???</td>
+</tr>
+<tr>
+<td>Cek email</td>
+<td>1 jam</td>
+<td>???</td>
+<td>???</td>
+<td>???</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>30 min</td>
+<td>???</td>
+<td>???</td>
+<td>???</td>
+</tr>
+
+<h3>Apa yang Harus Dilakukan:</h3>
+
+</tbody></table>
+<ol>
+<li><strong>BUANG</strong> → Kalau nggak ngefek, stop.</li>
+<li><strong>OUTSOURCE</strong> → Kalau penting tapi bukan core skill.</li>
+<li><strong>SIMPLIFY</strong> → Kalau bisa lebih singkat.</li>
+<li><strong>AUTOMATE</strong> → Kalau bisa pakai sistem.</li>
+</ol>
+
+<hr/>
+
+<h3>PERTANYAAN #4: "Produk/layanan mana yang paling sering diminta tapi paling sering kamu hindari jualan?"</h3>
+
+<p><strong>Hidden Gem — permata tersembunyi di bisnis kamu.</strong></p>
+
+<p>Setiap bisnis punya produk/layanan yang Sering ditanya customer tapi owner hindari jualan.</p>
+
+<p><strong>Kenapa owner hindari?</strong></p>
+<ul>
+<li>Margin tipis → "Nggak worth"</li>
+<li>Terlalu custom → "Nggak scalable"</li>
+<li>Nggak jago jual → "Nggak percaya diri"</li>
+</ul>
+
+<p><strong>Tapi pertanyaannya: Kenapa customer nggak bisa beli produk ini?</strong></p>
+
+<p>Kalau customer mau dan owner nggak jual — ada <strong>friction.</strong> Dan friction = <strong>uang yang terbuang.</strong></p>
+
+<p><strong>Contoh nyata:</strong></p>
+<p>Klien brand skincare saya. Customer sering tanya: <em>"Ada facial treatment nggak?"</em> Owner bilang: <em>"Nggak, kami cuma jual produk."</em></p>
+
+<p>Saya tanya: <em>"Tapi customer mau bayar 3x lipat untuk treatment. Kenapa nggak kasih mereka apa yang mereka mau?"</em></p>
+
+<p>Hasilnya: Home Service Facial. Revenue naik 40% dalam 2 bulan. <strong>Nggak buka klinik. Nggak hire banyak.</strong></p>
+
+<h3>Cara Uncover Hidden Gem:</h3>
+
+<ol>
+<li>Cek DM/WA: Apa yang paling sering ditanya?</li>
+<li>Cek complain: Apa yang customer bilang "wish kamu punya [X]"?</li>
+<li>Tanya CS: "Pertanyaan apa yang paling sering kamu terima?"</li>
+<li>Tanya tim sales: "Deal mana yang paling sering hilang karena kita nggak punya produk X?"</li>
+</ol>
+
+<hr/>
+
+<h3>PERTANYAAN #5: "Kenapa customer milih kompetitor kamu? Jujur."</h3>
+
+<p><strong>Pertanyaan paling brutal.</strong></p>
+
+<p>Kebanyakan owner nggak pernah tanya ini. Karena takut dengan jawabannya.</p>
+
+<p>Tapi justru di situ letak <strong>emas-nya.</strong></p>
+
+<h3>Cara Tanya</h3>
+
+<ol>
+<li>Identifikasi 5 customer yang pilih kompetitor</li>
+<li>Hubungi: <em>"Saya tau kamu pilih [kompetitor]. Saya cuma mau tahu — kenapa? Jujur."</em></li>
+</ol>
+
+<h3>Framework Analisis</h3>
+
+<table><thead><tr>
+<th>Alasan Pilih Kompetitor</th>
+<th>Action Item</th>
+</tr></thead><tbody>
+<tr>
+<td>Lebih murah</td>
+<td>Bikin tier harga atau naikkan value</td>
+</tr>
+<tr>
+<td>Lebih ramah</td>
+<td>Training customer service</td>
+</tr>
+<tr>
+<td>Lebih cepat</td>
+<td>Percepat proses</td>
+</tr>
+<tr>
+<td>Lebih jelas</td>
+<td>Perbaiki website/social media</td>
+</tr>
+<tr>
+<td>Lebih trustworthy</td>
+<td>Tambah social proof</td>
+</tr>
+
+<h3>Data dari Pengalaman</h3>
+
+</tbody></table>
+<p>Dari 50+ bisnis yang saya survey:</p>
+<ol>
+<li>Lebih cepat response (35%)</li>
+<li>Lebih jelas info (25%)</li>
+<li>Lebih murah (20%)</li>
+<li>Lebih ramah (15%)</li>
+<li>Fitur lebih lengkap (5%)</li>
+</ol>
+
+<p><strong>"Lebih murah" cuma #3. Value > harga untuk mayoritas customer.</strong></p>
+
+<hr/>
+
+<p><a name="bab-4"></a></p>
+<h2>BAB 4: CARA JAWAB DENGAN JUJUR</h2>
+
+<h3>Self-Deception yang Harus Diwaspadai</h3>
+
+<table><thead><tr>
+<th>Jenis</th>
+<th>Contoh</th>
+<th>Solusi</th>
+</tr></thead><tbody>
+<tr>
+<td>Confidence Bias</td>
+<td>"Pasti kita udah bagus"</td>
+<td>Dapet data objektif</td>
+</tr>
+<tr>
+<td>Survivorship Bias</td>
+<td>"Udah jalan 2 tahun, pasti OK"</td>
+<td>Bandingkan kompetitor</td>
+</tr>
+<tr>
+<td>Confirmation Bias</td>
+<td>"Customer bilang bagus"</td>
+<td>Tanya juga yang pergi</td>
+</tr>
+<tr>
+<td>Blind Spot</td>
+<td>"Nggak ada yang salah"</td>
+<td>Libatkan orang luar</td>
+</tr>
+
+<h3>Timeline: X-Ray dalam 60 Menit</h3>
+
+<tr>
+<td>Waktu</td>
+<td>Activity</td>
+</tr>
+<tr>
+<td>0-10 menit</td>
+<td>Jawab 5 pertanyaan sendiri</td>
+</tr>
+<tr>
+<td>10-25 menit</td>
+<td>Tanya 5 pelanggan terbaik</td>
+</tr>
+<tr>
+<td>25-40 menit</td>
+<td>Tanya 5 pelanggan yang pergi</td>
+</tr>
+<tr>
+<td>40-50 menit</td>
+<td>Tanya 5 orang di tim</td>
+</tr>
+<tr>
+<td>50-60 menit</td>
+<td>Konsolidasi & 3 action items</td>
+</tr>
+
+<hr/>
+
+</tbody></table>
+<p><a name="bab-5"></a></p>
+<h2>BAB 5: CASE STUDY — Muslim Fashion Stagnan 2 Tahun</h2>
+
+<h3>Situasi</h3>
+
+<p>Brand Muslim fashion "ALWARI" (nama disamarkan). Didirikan 2 tahun lalu. Penjualan stabil tapi <strong>nggak tumbuh.</strong> Mau rebranding. Mau iklan besar.</p>
+
+<p>Saya bilang: <em>"X-Ray dulu."</em></p>
+
+<h3>Hasil X-Ray</h3>
+
+<p><strong>Q1: "Kalau tutup besok, siapa yang paling kecewa?"</strong></p>
+<p>→ Owner: "Mungkin 20-30 orang?"</p>
+<p>→ Saya: "Mungkin? Kamu nggak tau?"</p>
+<p>→ Survey 20 pelanggan: <strong>hanya 3 yang bilang "sangat kecewa."</strong></p>
+<p>→ 🔴 <strong>PMF lemah.</strong></p>
+
+<p><strong>Q2: "Jelaskan dalam 1 kalimat ke anak 10 tahun"</strong></p>
+<p>→ Owner: "Kami adalah brand fashion Muslimah yang menyediakan berbagai macam pakaian dengan desain modern dan bahan berkualitas untuk wanita Muslim yang ingin tampil syar'i namun tetap stylish."</p>
+<p>→ Saya: "Itu 2 kalimat dan terlalu umum. Anak 10 tahun akan bingung."</p>
+<p>→ 🟡 <strong>Positioning blur.</strong></p>
+
+<p><strong>Q3: "Apa yang kamu lakukan setiap hari tapi nggak ngefek?"</strong></p>
+<p>→ Owner: "Cek Instagram kompetitor setiap hari."</p>
+<p>→ Saya: "Output-nya apa?"</p>
+<p>→ Owner: "Nggak tau. Cuma lihat-lihat."</p>
+<p>→ 🔴 <strong>Aktivitas palsu.</strong></p>
+
+<p><strong>Q4: "Produk mana yang paling sering diminta tapi kamu hindari?"</strong></p>
+<p>→ Owner: "Customer sering tanya baju tidur. Tapi saya nggak jual."</p>
+<p>→ Saya: "Kenapa? Margin-nya berapa?"</p>
+<p>→ Owner: "30%. Margin utama 35%."</p>
+<p>→ Saya: "5% difference nggak worth untuk customer yang SUDAH minta."</p>
+<p>→ 🟡 <strong>Hidden gem terbuang.</strong></p>
+
+<p><strong>Q5: "Kenapa customer milih kompetitor?"</strong></p>
+<p>→ Owner: "Nggak tau."</p>
+<p>→ Saya: "Tanya 5 customer yang pergi."</p>
+<p>→ Hasil: 3 bilang "lebih cepat respon." 2 bilang "lebih jelas deskripsi."</p>
+<p>→ 🟡 <strong>Response time & product description.</strong></p>
+
+<h3>Action & Hasil 3 Bulan</h3>
+
+<table><thead><tr>
+<th>Temuan</th>
+<th>Action</th>
+<th>Hasil</th>
+</tr></thead><tbody>
+<tr>
+<td>PMF lemah</td>
+<td>Survey & strengthen VP</td>
+<td>Retention naik 40%</td>
+</tr>
+<tr>
+<td>Positioning blur</td>
+<td>1 kalimat positioning</td>
+<td>Conversion naik 25%</td>
+</tr>
+<tr>
+<td>Aktivitas palsu</td>
+<td>Stop "cek kompetitor"</td>
+<td>2 jam/hari untuk hal produktif</td>
+</tr>
+<tr>
+<td>Hidden gem</td>
+<td>Luncurkan baju tidur</td>
+<td>Revenue +15%</td>
+</tr>
+<tr>
+<td>Response time</td>
+<td>Improve CS dari 6 jam ke 1 jam</td>
+<td>Rating 4.0 → 4.6</td>
+</tr>
+
+</tbody></table>
+<p><strong>Total: Revenue naik 55%. Biaya: Rp 0.</strong></p>
+
+<hr/>
+
+<p><a name="bab-6"></a></p>
+<h2>BAB 6: COMMON MISTAKES</h2>
+
+<h3>Mistake #1: Jawab dengan Asumsi, Bukan Data</h3>
+<p>❌ "Pasti customer bilang bagus"</p>
+<p>✅ "Survey 10 pelanggan: 7 bagus, 2 biasa, 1 jelek"</p>
+
+<h3>Mistake #2: Nggak Suka dengan Jawaban</h3>
+<p>Kalau nggak suka = tanda kamu <strong>membutuhkannya.</strong></p>
+
+<h3>Mistake #3: Lakukan Sendiri</h3>
+<p>Libatkan tim, mentor, coach. Semakin banyak perspektif = semakin objektif.</p>
+
+<h3>Mistake #4: Lakukan Sekali</h3>
+<p>X-Ray bukan acara sekali. Setiap <strong>kuartal</strong> (3 bulan).</p>
+
+<h3>Mistake #5: Nggak Action</h3>
+<p>X-Ray tanpa action = anxiety. Setiap temuan HARUS punya action item.</p>
+
+<hr/>
+
+<p><a name="bab-7"></a></p>
+<h2>BAB 7: ADVANCED TIPS</h2>
+
+<h3>Advanced #1: X-Ray untuk Tim</h3>
+<ol>
+<li>"Kalau tim dibubarkan, siapa yang paling kecewa?"</li>
+<li>"Apa yang tim lakukan setiap hari tapi nggak ngefek?"</li>
+<li>"Siapa yang paling sering diminta customer tapi kita hindari?"</li>
+</ol>
+
+<h3>Advanced #2: X-Ray untuk Produk</h3>
+<ol>
+<li>"Kalau produk ini dihapus, siapa yang paling kecewa?"</li>
+<li>"Apa yang customer bilang tentang produk ini vs kompetitor?"</li>
+</ol>
+
+<h3>Advanced #3: Quarterly X-Ray Calendar</h3>
+<table><thead><tr>
+<th>Bulan</th>
+<th>Activity</th>
+</tr></thead><tbody>
+<tr>
+<td>Januari</td>
+<td>X-Ray #1</td>
+</tr>
+<tr>
+<td>April</td>
+<td>X-Ray #2</td>
+</tr>
+<tr>
+<td>Juli</td>
+<td>X-Ray #3</td>
+</tr>
+<tr>
+<td>Oktober</td>
+<td>X-Ray #4</td>
+</tr>
+
+</tbody></table>
+<p>Bandingkan setiap X-Ray. Membaik atau memburuk?</p>
+
+<hr/>
+
+<p><a name="bab-8"></a></p>
+<h2>BAB 8: ACTION PLAN</h2>
+
+<h3>Business X-Ray Scorecard</h3>
+
+<p><strong>Q1:</strong> Tutup besok, siapa kecewa? Skor: ___/10</p>
+<p><strong>Q2:</strong> 1 kalimat ke anak 10 tahun? Skor: ___/10</p>
+<p><strong>Q3:</strong> Aktivitas palsu? ___</p>
+<p><strong>Q4:</strong> Hidden gem? ___</p>
+<p><strong>Q5:</strong> Alasan customer pilih kompetitor? ___</p>
+
+<p><strong>OVERALL:</strong> ___/50</p>
+<ul>
+<li>40-50: 🟢 Sehat</li>
+<li>25-39: 🟡 Perlu perbaikan</li>
+<li>0-24: 🔴 Tindakan segera</li>
+</ul>
+
+<hr/>
+
+<p><a name="penutup"></a></p>
+<h2>Penutup</h2>
+
+<h3>Jujur adalah Kekuatan</h3>
+
+<p>Saya tahu, Business X-Ray nggak nyaman. Bikin kamu harus jujur tentang hal-hal yang mungkin kamu hindari selama ini.</p>
+
+<p>Tapi satu kebenaran:</p>
+
+<p><strong>Kejujuran tentang kondisi bisnis bukan kelemahan. Itu kekuatan.</strong></p>
+
+<p>Kalau kamu nggak tau masalahnya, kamu nggak bisa memperbaikinya. Kalau kamu tau, kamu bisa <strong>memperbaikinya.</strong></p>
+
+<p>Memperbaiki 1 masalah yang tepat = lebih valuable dari 100 aktivitas yang salah.</p>
+
+<h3>Metode Berikutnya</h3>
+
+<p>Setelah diagnosis dengan X-Ray, pelajari <strong>🧬 Cell Division Model</strong> — cara scale bisnis dengan cloning unit yang udah terbukti jalan.</p>
+
+<p>Dua metode ini = <strong>diagnosis + action.</strong></p>
+
+<p>Salam,</p>
+<p><strong>Imam</strong></p>
+<p><em>Creator of 10 Business Hacking Methods</em></p>
+
+<hr/>
+
+<h3>Resources</h3>
+
+<p><strong>Tools:</strong> Google Forms, Google Sheets, Miro, WhatsApp</p>
+
+<hr/>
+
+<p><em>Hak Cipta © 2026 Imam Business Hacking Methods.</em></p>
+
+</article>
+<footer style="margin-top: 3em; padding: 1.5em; text-align: center; color: var(--text-light); border-top: 1px solid var(--border);"><p>© 2026 Imam Business Hacking Methods</p></footer>
+</body>
+</html>
